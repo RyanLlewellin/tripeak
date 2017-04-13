@@ -1,0 +1,38 @@
+{
+    "info": {
+        "version": 1,
+        "author": "CodeCaptain"
+    },
+    "images": [
+        {
+            "idiom": "universal",
+            "filename": "cardHeartsJ.png",
+            "scale": "1x"
+        },
+        {
+            "idiom": "universal",
+            "filename": "cardHeartsJ@2x.png",
+            "scale": "2x"
+        },
+        {
+            "idiom": "universal",
+            "filename": "cardHeartsJ@3x.png",
+            "scale": "3x"
+        },
+        {
+            "idiom": "mac",
+            "filename": "cardHeartsJ~mac.png",
+            "scale": "1x"
+        },
+        {
+            "idiom": "mac",
+            "filename": "cardHeartsJ~mac@2x.png",
+            "scale": "2x"
+        },
+        {
+            "idiom": "tv",
+            "filename": "cardHeartsJ~tv.png",
+            "scale": "1x"
+        }
+    ]
+}

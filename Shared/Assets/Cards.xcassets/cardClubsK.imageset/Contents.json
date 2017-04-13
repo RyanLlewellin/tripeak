@@ -1,0 +1,38 @@
+{
+    "info": {
+        "version": 1,
+        "author": "CodeCaptain"
+    },
+    "images": [
+        {
+            "idiom": "universal",
+            "filename": "cardClubsK.png",
+            "scale": "1x"
+        },
+        {
+            "idiom": "universal",
+            "filename": "cardClubsK@2x.png",
+            "scale": "2x"
+        },
+        {
+            "idiom": "universal",
+            "filename": "cardClubsK@3x.png",
+            "scale": "3x"
+        },
+        {
+            "idiom": "mac",
+            "filename": "cardClubsK~mac.png",
+            "scale": "1x"
+        },
+        {
+            "idiom": "mac",
+            "filename": "cardClubsK~mac@2x.png",
+            "scale": "2x"
+        },
+        {
+            "idiom": "tv",
+            "filename": "cardClubsK~tv.png",
+            "scale": "1x"
+        }
+    ]
+}

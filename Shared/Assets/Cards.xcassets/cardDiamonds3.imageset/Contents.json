@@ -1,0 +1,38 @@
+{
+    "info": {
+        "version": 1,
+        "author": "CodeCaptain"
+    },
+    "images": [
+        {
+            "idiom": "universal",
+            "filename": "cardDiamonds3.png",
+            "scale": "1x"
+        },
+        {
+            "idiom": "universal",
+            "filename": "cardDiamonds3@2x.png",
+            "scale": "2x"
+        },
+        {
+            "idiom": "universal",
+            "filename": "cardDiamonds3@3x.png",
+            "scale": "3x"
+        },
+        {
+            "idiom": "mac",
+            "filename": "cardDiamonds3~mac.png",
+            "scale": "1x"
+        },
+        {
+            "idiom": "mac",
+            "filename": "cardDiamonds3~mac@2x.png",
+            "scale": "2x"
+        },
+        {
+            "idiom": "tv",
+            "filename": "cardDiamonds3~tv.png",
+            "scale": "1x"
+        }
+    ]
+}

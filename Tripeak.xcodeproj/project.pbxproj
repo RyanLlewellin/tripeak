@@ -1,0 +1,729 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		83C077D21C43FE2600CE5AE6 /* Birdy_Note5.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83C077CE1C43FE2600CE5AE6 /* Birdy_Note5.wav */; };
+		83C077D31C43FE2600CE5AE6 /* Birdy_Notification1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83C077CF1C43FE2600CE5AE6 /* Birdy_Notification1.wav */; };
+		83C077D41C43FE2600CE5AE6 /* cardSlide1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83C077D01C43FE2600CE5AE6 /* cardSlide1.wav */; };
+		83C077D51C43FE2600CE5AE6 /* cardSlide8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 83C077D11C43FE2600CE5AE6 /* cardSlide8.wav */; };
+		83C0781B1C44044200CE5AE6 /* OALAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077DB1C44044200CE5AE6 /* OALAction.m */; };
+		83C0781C1C44044200CE5AE6 /* OALActionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077DD1C44044200CE5AE6 /* OALActionManager.m */; };
+		83C0781D1C44044200CE5AE6 /* OALAudioActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077DF1C44044200CE5AE6 /* OALAudioActions.m */; };
+		83C0781E1C44044200CE5AE6 /* OALUtilityActions.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077E11C44044200CE5AE6 /* OALUtilityActions.m */; };
+		83C0781F1C44044200CE5AE6 /* OALAudioTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077E41C44044200CE5AE6 /* OALAudioTrack.m */; };
+		83C078201C44044200CE5AE6 /* OALAudioTrackNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077E61C44044200CE5AE6 /* OALAudioTrackNotifications.m */; };
+		83C078211C44044200CE5AE6 /* OALAudioTracks.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077E81C44044200CE5AE6 /* OALAudioTracks.m */; };
+		83C078221C44044200CE5AE6 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83C077E91C44044200CE5AE6 /* Info.plist */; };
+		83C078231C44044200CE5AE6 /* OALSimpleAudio.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077EB1C44044200CE5AE6 /* OALSimpleAudio.m */; };
+		83C078241C44044300CE5AE6 /* ALBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077F01C44044200CE5AE6 /* ALBuffer.m */; };
+		83C078251C44044300CE5AE6 /* ALCaptureDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077F21C44044200CE5AE6 /* ALCaptureDevice.m */; };
+		83C078261C44044300CE5AE6 /* ALChannelSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077F41C44044200CE5AE6 /* ALChannelSource.m */; };
+		83C078271C44044300CE5AE6 /* ALContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077F61C44044200CE5AE6 /* ALContext.m */; };
+		83C078281C44044300CE5AE6 /* ALDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077F81C44044200CE5AE6 /* ALDevice.m */; };
+		83C078291C44044300CE5AE6 /* ALListener.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077FA1C44044200CE5AE6 /* ALListener.m */; };
+		83C0782A1C44044300CE5AE6 /* ALSoundSourcePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077FD1C44044200CE5AE6 /* ALSoundSourcePool.m */; };
+		83C0782B1C44044300CE5AE6 /* ALSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C077FF1C44044200CE5AE6 /* ALSource.m */; };
+		83C0782C1C44044300CE5AE6 /* ALWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C078021C44044200CE5AE6 /* ALWrapper.m */; };
+		83C0782D1C44044300CE5AE6 /* OpenALManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C078041C44044200CE5AE6 /* OpenALManager.m */; };
+		83C0782E1C44044300CE5AE6 /* OALAudioSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C078071C44044200CE5AE6 /* OALAudioSession.m */; };
+		83C0782F1C44044300CE5AE6 /* OALSuspendHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C078091C44044200CE5AE6 /* OALSuspendHandler.m */; };
+		83C078301C44044300CE5AE6 /* IOSVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C0780D1C44044200CE5AE6 /* IOSVersion.m */; };
+		83C078311C44044300CE5AE6 /* mach_timing.c in Sources */ = {isa = PBXBuildFile; fileRef = 83C0780E1C44044200CE5AE6 /* mach_timing.c */; };
+		83C078321C44044300CE5AE6 /* NSMutableArray+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C078111C44044200CE5AE6 /* NSMutableArray+WeakReferences.m */; };
+		83C078331C44044300CE5AE6 /* NSMutableDictionary+WeakReferences.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C078131C44044200CE5AE6 /* NSMutableDictionary+WeakReferences.m */; };
+		83C078341C44044300CE5AE6 /* OALAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C078151C44044200CE5AE6 /* OALAudioFile.m */; };
+		83C078351C44044300CE5AE6 /* OALTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 83C078181C44044200CE5AE6 /* OALTools.m */; };
+		83D8E0BD1C43F167003E84F3 /* TRIDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E0B51C43F167003E84F3 /* TRIDevices.swift */; };
+		83D8E0BF1C43F167003E84F3 /* TRIFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E0B71C43F167003E84F3 /* TRIFonts.swift */; };
+		83D8E0C01C43F167003E84F3 /* TRIKeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E0B81C43F167003E84F3 /* TRIKeyCodes.swift */; };
+		83D8E0C11C43F167003E84F3 /* TRISounds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E0B91C43F167003E84F3 /* TRISounds.swift */; };
+		83D8E0DF1C43F217003E84F3 /* TRIParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E0DD1C43F217003E84F3 /* TRIParallaxEffect.swift */; };
+		83D8E0E01C43F217003E84F3 /* TRIWeakContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E0DE1C43F217003E84F3 /* TRIWeakContainer.swift */; };
+		83D8E0E31C43F235003E84F3 /* TRIGameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E0E11C43F235003E84F3 /* TRIGameScene.swift */; };
+		83D8E0F01C43F2D0003E84F3 /* TRIBaseGameLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E0EC1C43F2D0003E84F3 /* TRIBaseGameLayout.swift */; };
+		83D8E1291C43F34E003E84F3 /* TRIBaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E11D1C43F34E003E84F3 /* TRIBaseButton.swift */; };
+		83D8E12A1C43F34E003E84F3 /* TRISimpleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E11E1C43F34E003E84F3 /* TRISimpleButton.swift */; };
+		83D8E12B1C43F34E003E84F3 /* TRIWireButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E11F1C43F34E003E84F3 /* TRIWireButton.swift */; };
+		83D8E12C1C43F34E003E84F3 /* TRIBaseOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8E1211C43F34E003E84F3 /* TRIBaseOverlay.swift */; };
+		83F641E41C34360E00CCABB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F641E31C34360E00CCABB7 /* AppDelegate.swift */; };
+		83F641EA1C34360E00CCABB7 /* IOSGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83F641E91C34360E00CCABB7 /* IOSGameViewController.swift */; };
+		83F641ED1C34360E00CCABB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83F641EB1C34360E00CCABB7 /* Main.storyboard */; };
+		83F641FD1C34387900CCABB7 /* iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F641FC1C34387900CCABB7 /* iOS.xcassets */; };
+		83F6420E1C34397200CCABB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F642011C34397200CCABB7 /* Assets.xcassets */; };
+		83F6420F1C34397200CCABB7 /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F642021C34397200CCABB7 /* Cards.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		83C077CE1C43FE2600CE5AE6 /* Birdy_Note5.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Birdy_Note5.wav; sourceTree = "<group>"; };
+		83C077CF1C43FE2600CE5AE6 /* Birdy_Notification1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Birdy_Notification1.wav; sourceTree = "<group>"; };
+		83C077D01C43FE2600CE5AE6 /* cardSlide1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardSlide1.wav; sourceTree = "<group>"; };
+		83C077D11C43FE2600CE5AE6 /* cardSlide8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = cardSlide8.wav; sourceTree = "<group>"; };
+		83C077D91C44044200CE5AE6 /* OALAction+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OALAction+Private.h"; sourceTree = "<group>"; };
+		83C077DA1C44044200CE5AE6 /* OALAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAction.h; sourceTree = "<group>"; };
+		83C077DB1C44044200CE5AE6 /* OALAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAction.m; sourceTree = "<group>"; };
+		83C077DC1C44044200CE5AE6 /* OALActionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALActionManager.h; sourceTree = "<group>"; };
+		83C077DD1C44044200CE5AE6 /* OALActionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALActionManager.m; sourceTree = "<group>"; };
+		83C077DE1C44044200CE5AE6 /* OALAudioActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioActions.h; sourceTree = "<group>"; };
+		83C077DF1C44044200CE5AE6 /* OALAudioActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioActions.m; sourceTree = "<group>"; };
+		83C077E01C44044200CE5AE6 /* OALUtilityActions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALUtilityActions.h; sourceTree = "<group>"; };
+		83C077E11C44044200CE5AE6 /* OALUtilityActions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALUtilityActions.m; sourceTree = "<group>"; };
+		83C077E31C44044200CE5AE6 /* OALAudioTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTrack.h; sourceTree = "<group>"; };
+		83C077E41C44044200CE5AE6 /* OALAudioTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTrack.m; sourceTree = "<group>"; };
+		83C077E51C44044200CE5AE6 /* OALAudioTrackNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTrackNotifications.h; sourceTree = "<group>"; };
+		83C077E61C44044200CE5AE6 /* OALAudioTrackNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTrackNotifications.m; sourceTree = "<group>"; };
+		83C077E71C44044200CE5AE6 /* OALAudioTracks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioTracks.h; sourceTree = "<group>"; };
+		83C077E81C44044200CE5AE6 /* OALAudioTracks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioTracks.m; sourceTree = "<group>"; };
+		83C077E91C44044200CE5AE6 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83C077EA1C44044200CE5AE6 /* OALSimpleAudio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALSimpleAudio.h; sourceTree = "<group>"; };
+		83C077EB1C44044200CE5AE6 /* OALSimpleAudio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALSimpleAudio.m; sourceTree = "<group>"; };
+		83C077EC1C44044200CE5AE6 /* ObjectAL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectAL.h; sourceTree = "<group>"; };
+		83C077ED1C44044200CE5AE6 /* ObjectALConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectALConfig.h; sourceTree = "<group>"; };
+		83C077EF1C44044200CE5AE6 /* ALBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALBuffer.h; sourceTree = "<group>"; };
+		83C077F01C44044200CE5AE6 /* ALBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALBuffer.m; sourceTree = "<group>"; };
+		83C077F11C44044200CE5AE6 /* ALCaptureDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALCaptureDevice.h; sourceTree = "<group>"; };
+		83C077F21C44044200CE5AE6 /* ALCaptureDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALCaptureDevice.m; sourceTree = "<group>"; };
+		83C077F31C44044200CE5AE6 /* ALChannelSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALChannelSource.h; sourceTree = "<group>"; };
+		83C077F41C44044200CE5AE6 /* ALChannelSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALChannelSource.m; sourceTree = "<group>"; };
+		83C077F51C44044200CE5AE6 /* ALContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALContext.h; sourceTree = "<group>"; };
+		83C077F61C44044200CE5AE6 /* ALContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALContext.m; sourceTree = "<group>"; };
+		83C077F71C44044200CE5AE6 /* ALDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALDevice.h; sourceTree = "<group>"; };
+		83C077F81C44044200CE5AE6 /* ALDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALDevice.m; sourceTree = "<group>"; };
+		83C077F91C44044200CE5AE6 /* ALListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALListener.h; sourceTree = "<group>"; };
+		83C077FA1C44044200CE5AE6 /* ALListener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALListener.m; sourceTree = "<group>"; };
+		83C077FB1C44044200CE5AE6 /* ALSoundSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSoundSource.h; sourceTree = "<group>"; };
+		83C077FC1C44044200CE5AE6 /* ALSoundSourcePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSoundSourcePool.h; sourceTree = "<group>"; };
+		83C077FD1C44044200CE5AE6 /* ALSoundSourcePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSoundSourcePool.m; sourceTree = "<group>"; };
+		83C077FE1C44044200CE5AE6 /* ALSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALSource.h; sourceTree = "<group>"; };
+		83C077FF1C44044200CE5AE6 /* ALSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALSource.m; sourceTree = "<group>"; };
+		83C078001C44044200CE5AE6 /* ALTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTypes.h; sourceTree = "<group>"; };
+		83C078011C44044200CE5AE6 /* ALWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALWrapper.h; sourceTree = "<group>"; };
+		83C078021C44044200CE5AE6 /* ALWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALWrapper.m; sourceTree = "<group>"; };
+		83C078031C44044200CE5AE6 /* OpenALManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenALManager.h; sourceTree = "<group>"; };
+		83C078041C44044200CE5AE6 /* OpenALManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenALManager.m; sourceTree = "<group>"; };
+		83C078061C44044200CE5AE6 /* OALAudioSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioSession.h; sourceTree = "<group>"; };
+		83C078071C44044200CE5AE6 /* OALAudioSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioSession.m; sourceTree = "<group>"; };
+		83C078081C44044200CE5AE6 /* OALSuspendHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALSuspendHandler.h; sourceTree = "<group>"; };
+		83C078091C44044200CE5AE6 /* OALSuspendHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALSuspendHandler.m; sourceTree = "<group>"; };
+		83C0780B1C44044200CE5AE6 /* ARCSafe_MemMgmt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCSafe_MemMgmt.h; sourceTree = "<group>"; };
+		83C0780C1C44044200CE5AE6 /* IOSVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSVersion.h; sourceTree = "<group>"; };
+		83C0780D1C44044200CE5AE6 /* IOSVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOSVersion.m; sourceTree = "<group>"; };
+		83C0780E1C44044200CE5AE6 /* mach_timing.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mach_timing.c; sourceTree = "<group>"; };
+		83C0780F1C44044200CE5AE6 /* mach_timing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mach_timing.h; sourceTree = "<group>"; };
+		83C078101C44044200CE5AE6 /* NSMutableArray+WeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+WeakReferences.h"; sourceTree = "<group>"; };
+		83C078111C44044200CE5AE6 /* NSMutableArray+WeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+WeakReferences.m"; sourceTree = "<group>"; };
+		83C078121C44044200CE5AE6 /* NSMutableDictionary+WeakReferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+WeakReferences.h"; sourceTree = "<group>"; };
+		83C078131C44044200CE5AE6 /* NSMutableDictionary+WeakReferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+WeakReferences.m"; sourceTree = "<group>"; };
+		83C078141C44044200CE5AE6 /* OALAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALAudioFile.h; sourceTree = "<group>"; };
+		83C078151C44044200CE5AE6 /* OALAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALAudioFile.m; sourceTree = "<group>"; };
+		83C078161C44044200CE5AE6 /* OALNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALNotifications.h; sourceTree = "<group>"; };
+		83C078171C44044200CE5AE6 /* OALTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OALTools.h; sourceTree = "<group>"; };
+		83C078181C44044200CE5AE6 /* OALTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OALTools.m; sourceTree = "<group>"; };
+		83C078191C44044200CE5AE6 /* ObjectALMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectALMacros.h; sourceTree = "<group>"; };
+		83C0781A1C44044200CE5AE6 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		83D8E0B51C43F167003E84F3 /* TRIDevices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIDevices.swift; sourceTree = "<group>"; };
+		83D8E0B71C43F167003E84F3 /* TRIFonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIFonts.swift; sourceTree = "<group>"; };
+		83D8E0B81C43F167003E84F3 /* TRIKeyCodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIKeyCodes.swift; sourceTree = "<group>"; };
+		83D8E0B91C43F167003E84F3 /* TRISounds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRISounds.swift; sourceTree = "<group>"; };
+		83D8E0DC1C43F217003E84F3 /* TRIBridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRIBridgingHeader.h; sourceTree = "<group>"; };
+		83D8E0DD1C43F217003E84F3 /* TRIParallaxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIParallaxEffect.swift; sourceTree = "<group>"; };
+		83D8E0DE1C43F217003E84F3 /* TRIWeakContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIWeakContainer.swift; sourceTree = "<group>"; };
+		83D8E0E11C43F235003E84F3 /* TRIGameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameScene.swift; sourceTree = "<group>"; };
+		83D8E0EC1C43F2D0003E84F3 /* TRIBaseGameLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIBaseGameLayout.swift; sourceTree = "<group>"; };
+		83D8E11D1C43F34E003E84F3 /* TRIBaseButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIBaseButton.swift; sourceTree = "<group>"; };
+		83D8E11E1C43F34E003E84F3 /* TRISimpleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRISimpleButton.swift; sourceTree = "<group>"; };
+		83D8E11F1C43F34E003E84F3 /* TRIWireButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIWireButton.swift; sourceTree = "<group>"; };
+		83D8E1211C43F34E003E84F3 /* TRIBaseOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIBaseOverlay.swift; sourceTree = "<group>"; };
+		83F641E01C34360E00CCABB7 /* Tripeak_iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripeak_iOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F641E31C34360E00CCABB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		83F641E91C34360E00CCABB7 /* IOSGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSGameViewController.swift; sourceTree = "<group>"; };
+		83F641EC1C34360E00CCABB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		83F641F31C34360E00CCABB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83F641FC1C34387900CCABB7 /* iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = iOS.xcassets; sourceTree = "<group>"; };
+		83F642011C34397200CCABB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		83F642021C34397200CCABB7 /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		83F641DD1C34360E00CCABB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83C077CD1C43FE2600CE5AE6 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				83C077CE1C43FE2600CE5AE6 /* Birdy_Note5.wav */,
+				83C077CF1C43FE2600CE5AE6 /* Birdy_Notification1.wav */,
+				83C077D01C43FE2600CE5AE6 /* cardSlide1.wav */,
+				83C077D11C43FE2600CE5AE6 /* cardSlide8.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		83C077D71C44044200CE5AE6 /* ObjectAL */ = {
+			isa = PBXGroup;
+			children = (
+				83C077D81C44044200CE5AE6 /* Actions */,
+				83C077E21C44044200CE5AE6 /* AudioTrack */,
+				83C077E91C44044200CE5AE6 /* Info.plist */,
+				83C077EA1C44044200CE5AE6 /* OALSimpleAudio.h */,
+				83C077EB1C44044200CE5AE6 /* OALSimpleAudio.m */,
+				83C077EC1C44044200CE5AE6 /* ObjectAL.h */,
+				83C077ED1C44044200CE5AE6 /* ObjectALConfig.h */,
+				83C077EE1C44044200CE5AE6 /* OpenAL */,
+				83C078051C44044200CE5AE6 /* Session */,
+				83C0780A1C44044200CE5AE6 /* Support */,
+			);
+			path = ObjectAL;
+			sourceTree = "<group>";
+		};
+		83C077D81C44044200CE5AE6 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				83C077D91C44044200CE5AE6 /* OALAction+Private.h */,
+				83C077DA1C44044200CE5AE6 /* OALAction.h */,
+				83C077DB1C44044200CE5AE6 /* OALAction.m */,
+				83C077DC1C44044200CE5AE6 /* OALActionManager.h */,
+				83C077DD1C44044200CE5AE6 /* OALActionManager.m */,
+				83C077DE1C44044200CE5AE6 /* OALAudioActions.h */,
+				83C077DF1C44044200CE5AE6 /* OALAudioActions.m */,
+				83C077E01C44044200CE5AE6 /* OALUtilityActions.h */,
+				83C077E11C44044200CE5AE6 /* OALUtilityActions.m */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		83C077E21C44044200CE5AE6 /* AudioTrack */ = {
+			isa = PBXGroup;
+			children = (
+				83C077E31C44044200CE5AE6 /* OALAudioTrack.h */,
+				83C077E41C44044200CE5AE6 /* OALAudioTrack.m */,
+				83C077E51C44044200CE5AE6 /* OALAudioTrackNotifications.h */,
+				83C077E61C44044200CE5AE6 /* OALAudioTrackNotifications.m */,
+				83C077E71C44044200CE5AE6 /* OALAudioTracks.h */,
+				83C077E81C44044200CE5AE6 /* OALAudioTracks.m */,
+			);
+			path = AudioTrack;
+			sourceTree = "<group>";
+		};
+		83C077EE1C44044200CE5AE6 /* OpenAL */ = {
+			isa = PBXGroup;
+			children = (
+				83C077EF1C44044200CE5AE6 /* ALBuffer.h */,
+				83C077F01C44044200CE5AE6 /* ALBuffer.m */,
+				83C077F11C44044200CE5AE6 /* ALCaptureDevice.h */,
+				83C077F21C44044200CE5AE6 /* ALCaptureDevice.m */,
+				83C077F31C44044200CE5AE6 /* ALChannelSource.h */,
+				83C077F41C44044200CE5AE6 /* ALChannelSource.m */,
+				83C077F51C44044200CE5AE6 /* ALContext.h */,
+				83C077F61C44044200CE5AE6 /* ALContext.m */,
+				83C077F71C44044200CE5AE6 /* ALDevice.h */,
+				83C077F81C44044200CE5AE6 /* ALDevice.m */,
+				83C077F91C44044200CE5AE6 /* ALListener.h */,
+				83C077FA1C44044200CE5AE6 /* ALListener.m */,
+				83C077FB1C44044200CE5AE6 /* ALSoundSource.h */,
+				83C077FC1C44044200CE5AE6 /* ALSoundSourcePool.h */,
+				83C077FD1C44044200CE5AE6 /* ALSoundSourcePool.m */,
+				83C077FE1C44044200CE5AE6 /* ALSource.h */,
+				83C077FF1C44044200CE5AE6 /* ALSource.m */,
+				83C078001C44044200CE5AE6 /* ALTypes.h */,
+				83C078011C44044200CE5AE6 /* ALWrapper.h */,
+				83C078021C44044200CE5AE6 /* ALWrapper.m */,
+				83C078031C44044200CE5AE6 /* OpenALManager.h */,
+				83C078041C44044200CE5AE6 /* OpenALManager.m */,
+			);
+			path = OpenAL;
+			sourceTree = "<group>";
+		};
+		83C078051C44044200CE5AE6 /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				83C078061C44044200CE5AE6 /* OALAudioSession.h */,
+				83C078071C44044200CE5AE6 /* OALAudioSession.m */,
+				83C078081C44044200CE5AE6 /* OALSuspendHandler.h */,
+				83C078091C44044200CE5AE6 /* OALSuspendHandler.m */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		83C0780A1C44044200CE5AE6 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				83C0780B1C44044200CE5AE6 /* ARCSafe_MemMgmt.h */,
+				83C0780C1C44044200CE5AE6 /* IOSVersion.h */,
+				83C0780D1C44044200CE5AE6 /* IOSVersion.m */,
+				83C0780E1C44044200CE5AE6 /* mach_timing.c */,
+				83C0780F1C44044200CE5AE6 /* mach_timing.h */,
+				83C078101C44044200CE5AE6 /* NSMutableArray+WeakReferences.h */,
+				83C078111C44044200CE5AE6 /* NSMutableArray+WeakReferences.m */,
+				83C078121C44044200CE5AE6 /* NSMutableDictionary+WeakReferences.h */,
+				83C078131C44044200CE5AE6 /* NSMutableDictionary+WeakReferences.m */,
+				83C078141C44044200CE5AE6 /* OALAudioFile.h */,
+				83C078151C44044200CE5AE6 /* OALAudioFile.m */,
+				83C078161C44044200CE5AE6 /* OALNotifications.h */,
+				83C078171C44044200CE5AE6 /* OALTools.h */,
+				83C078181C44044200CE5AE6 /* OALTools.m */,
+				83C078191C44044200CE5AE6 /* ObjectALMacros.h */,
+				83C0781A1C44044200CE5AE6 /* SynthesizeSingleton.h */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		83D089A01C3EB8930077E53C /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				83C077D71C44044200CE5AE6 /* ObjectAL */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		83D8E0EB1C43F2D0003E84F3 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				83D8E0EC1C43F2D0003E84F3 /* TRIBaseGameLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		83D8E11B1C43F34E003E84F3 /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				83D8E11C1C43F34E003E84F3 /* Buttons */,
+				83D8E1201C43F34E003E84F3 /* Overlays */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		83D8E11C1C43F34E003E84F3 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				83D8E11D1C43F34E003E84F3 /* TRIBaseButton.swift */,
+				83D8E11E1C43F34E003E84F3 /* TRISimpleButton.swift */,
+				83D8E11F1C43F34E003E84F3 /* TRIWireButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		83D8E1201C43F34E003E84F3 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				83D8E1211C43F34E003E84F3 /* TRIBaseOverlay.swift */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		83F641D71C34360E00CCABB7 = {
+			isa = PBXGroup;
+			children = (
+				83F641F91C34374E00CCABB7 /* Shared */,
+				83F641E21C34360E00CCABB7 /* Tripeak_iOS */,
+				83F641E11C34360E00CCABB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83F641E11C34360E00CCABB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				83F641E01C34360E00CCABB7 /* Tripeak_iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		83F641E21C34360E00CCABB7 /* Tripeak_iOS */ = {
+			isa = PBXGroup;
+			children = (
+				83F641FC1C34387900CCABB7 /* iOS.xcassets */,
+				83F641E31C34360E00CCABB7 /* AppDelegate.swift */,
+				83F641E91C34360E00CCABB7 /* IOSGameViewController.swift */,
+				83F641EB1C34360E00CCABB7 /* Main.storyboard */,
+				83F641F31C34360E00CCABB7 /* Info.plist */,
+			);
+			path = Tripeak_iOS;
+			sourceTree = "<group>";
+		};
+		83F641F91C34374E00CCABB7 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				83F642001C34397200CCABB7 /* Assets */,
+				83F642031C34397200CCABB7 /* Enums */,
+				83F642041C34397200CCABB7 /* Extensions */,
+				83D8E0EB1C43F2D0003E84F3 /* Layouts */,
+				83D089A01C3EB8930077E53C /* Libraries */,
+				83F642061C34397200CCABB7 /* Managers */,
+				83F642071C34397200CCABB7 /* Models */,
+				83F642081C34397200CCABB7 /* Other */,
+				83F642091C34397200CCABB7 /* Scenes */,
+				83D8E11B1C43F34E003E84F3 /* Sprites */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		83F642001C34397200CCABB7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				83F642011C34397200CCABB7 /* Assets.xcassets */,
+				83F642021C34397200CCABB7 /* Cards.xcassets */,
+				83C077CD1C43FE2600CE5AE6 /* Sounds */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		83F642031C34397200CCABB7 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				83D8E0B51C43F167003E84F3 /* TRIDevices.swift */,
+				83D8E0B71C43F167003E84F3 /* TRIFonts.swift */,
+				83D8E0B81C43F167003E84F3 /* TRIKeyCodes.swift */,
+				83D8E0B91C43F167003E84F3 /* TRISounds.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		83F642041C34397200CCABB7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		83F642061C34397200CCABB7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		83F642071C34397200CCABB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		83F642081C34397200CCABB7 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				83D8E0DC1C43F217003E84F3 /* TRIBridgingHeader.h */,
+				83D8E0DD1C43F217003E84F3 /* TRIParallaxEffect.swift */,
+				83D8E0DE1C43F217003E84F3 /* TRIWeakContainer.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		83F642091C34397200CCABB7 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				83D8E0E11C43F235003E84F3 /* TRIGameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		83F641DF1C34360E00CCABB7 /* Tripeak_iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83F641F61C34360E00CCABB7 /* Build configuration list for PBXNativeTarget "Tripeak_iOS" */;
+			buildPhases = (
+				83F641DC1C34360E00CCABB7 /* Sources */,
+				83F641DD1C34360E00CCABB7 /* Frameworks */,
+				83F641DE1C34360E00CCABB7 /* Resources */,
+				83F642111C34399F00CCABB7 /* Swift Lint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tripeak_iOS;
+			productName = Tripeak_iOS;
+			productReference = 83F641E01C34360E00CCABB7 /* Tripeak_iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83F641D81C34360E00CCABB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TRI;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = CodeCaptain;
+				TargetAttributes = {
+					83F641DF1C34360E00CCABB7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = PZ933N4H8M;
+					};
+				};
+			};
+			buildConfigurationList = 83F641DB1C34360E00CCABB7 /* Build configuration list for PBXProject "Tripeak" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83F641D71C34360E00CCABB7;
+			productRefGroup = 83F641E11C34360E00CCABB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83F641DF1C34360E00CCABB7 /* Tripeak_iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		83F641DE1C34360E00CCABB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83F641ED1C34360E00CCABB7 /* Main.storyboard in Resources */,
+				83F6420E1C34397200CCABB7 /* Assets.xcassets in Resources */,
+				83C078221C44044200CE5AE6 /* Info.plist in Resources */,
+				83C077D31C43FE2600CE5AE6 /* Birdy_Notification1.wav in Resources */,
+				83F641FD1C34387900CCABB7 /* iOS.xcassets in Resources */,
+				83C077D51C43FE2600CE5AE6 /* cardSlide8.wav in Resources */,
+				83C077D21C43FE2600CE5AE6 /* Birdy_Note5.wav in Resources */,
+				83C077D41C43FE2600CE5AE6 /* cardSlide1.wav in Resources */,
+				83F6420F1C34397200CCABB7 /* Cards.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83F642111C34399F00CCABB7 /* Swift Lint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Swift Lint";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\nfi\nexit 0";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83F641DC1C34360E00CCABB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83D8E12A1C43F34E003E84F3 /* TRISimpleButton.swift in Sources */,
+				83C0781E1C44044200CE5AE6 /* OALUtilityActions.m in Sources */,
+				83C0781D1C44044200CE5AE6 /* OALAudioActions.m in Sources */,
+				83F641EA1C34360E00CCABB7 /* IOSGameViewController.swift in Sources */,
+				83C0782D1C44044300CE5AE6 /* OpenALManager.m in Sources */,
+				83C078341C44044300CE5AE6 /* OALAudioFile.m in Sources */,
+				83C078201C44044200CE5AE6 /* OALAudioTrackNotifications.m in Sources */,
+				83C078251C44044300CE5AE6 /* ALCaptureDevice.m in Sources */,
+				83C078291C44044300CE5AE6 /* ALListener.m in Sources */,
+				83C078231C44044200CE5AE6 /* OALSimpleAudio.m in Sources */,
+				83C078351C44044300CE5AE6 /* OALTools.m in Sources */,
+				83C0781C1C44044200CE5AE6 /* OALActionManager.m in Sources */,
+				83C078311C44044300CE5AE6 /* mach_timing.c in Sources */,
+				83C078331C44044300CE5AE6 /* NSMutableDictionary+WeakReferences.m in Sources */,
+				83D8E0E01C43F217003E84F3 /* TRIWeakContainer.swift in Sources */,
+				83D8E0F01C43F2D0003E84F3 /* TRIBaseGameLayout.swift in Sources */,
+				83C078211C44044200CE5AE6 /* OALAudioTracks.m in Sources */,
+				83C078301C44044300CE5AE6 /* IOSVersion.m in Sources */,
+				83D8E0DF1C43F217003E84F3 /* TRIParallaxEffect.swift in Sources */,
+				83C0782B1C44044300CE5AE6 /* ALSource.m in Sources */,
+				83C0782A1C44044300CE5AE6 /* ALSoundSourcePool.m in Sources */,
+				83C078281C44044300CE5AE6 /* ALDevice.m in Sources */,
+				83D8E12C1C43F34E003E84F3 /* TRIBaseOverlay.swift in Sources */,
+				83D8E0C11C43F167003E84F3 /* TRISounds.swift in Sources */,
+				83C0782E1C44044300CE5AE6 /* OALAudioSession.m in Sources */,
+				83D8E0E31C43F235003E84F3 /* TRIGameScene.swift in Sources */,
+				83C0782C1C44044300CE5AE6 /* ALWrapper.m in Sources */,
+				83D8E0C01C43F167003E84F3 /* TRIKeyCodes.swift in Sources */,
+				83F641E41C34360E00CCABB7 /* AppDelegate.swift in Sources */,
+				83C0782F1C44044300CE5AE6 /* OALSuspendHandler.m in Sources */,
+				83C078321C44044300CE5AE6 /* NSMutableArray+WeakReferences.m in Sources */,
+				83C0781B1C44044200CE5AE6 /* OALAction.m in Sources */,
+				83C078241C44044300CE5AE6 /* ALBuffer.m in Sources */,
+				83C0781F1C44044200CE5AE6 /* OALAudioTrack.m in Sources */,
+				83C078261C44044300CE5AE6 /* ALChannelSource.m in Sources */,
+				83D8E12B1C43F34E003E84F3 /* TRIWireButton.swift in Sources */,
+				83D8E0BF1C43F167003E84F3 /* TRIFonts.swift in Sources */,
+				83D8E1291C43F34E003E84F3 /* TRIBaseButton.swift in Sources */,
+				83C078271C44044300CE5AE6 /* ALContext.m in Sources */,
+				83D8E0BD1C43F167003E84F3 /* TRIDevices.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		83F641EB1C34360E00CCABB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				83F641EC1C34360E00CCABB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		83F641F41C34360E00CCABB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		83F641F51C34360E00CCABB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		83F641F71C34360E00CCABB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Launch;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tripeak_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.codecaptain.Tripeak-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = ./Shared/Other/TRIBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		83F641F81C34360E00CCABB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Launch;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = Tripeak_iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.codecaptain.Tripeak-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = ./Shared/Other/TRIBridgingHeader.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83F641DB1C34360E00CCABB7 /* Build configuration list for PBXProject "Tripeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F641F41C34360E00CCABB7 /* Debug */,
+				83F641F51C34360E00CCABB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83F641F61C34360E00CCABB7 /* Build configuration list for PBXNativeTarget "Tripeak_iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83F641F71C34360E00CCABB7 /* Debug */,
+				83F641F81C34360E00CCABB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83F641D81C34360E00CCABB7 /* Project object */;
+}
