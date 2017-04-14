@@ -10,6 +10,7 @@ import Foundation
 
 class TRIGameSceneLayout: NSObject {
 
+    static var tripeakOffsetY: CGFloat = 80.0
     static var tripeakOffsetBetweenCards: CGFloat = 2.0
     static var cardSizeMultiplier = 0.75
     static var cardSize: CGSize = CGSize(

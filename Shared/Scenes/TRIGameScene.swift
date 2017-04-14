@@ -11,6 +11,9 @@ import SpriteKit
 class TRIGameScene: SKScene {
     
     private var gameSetupManager: TRIGameSetupManager?
+    var leftPeak: [TRICard] = []
+    var centerPeak: [TRICard] = []
+    var rightPeak: [TRICard] = []
   
     override func didMove(to view: SKView) {
         let gameSetupManager = TRIGameSetupManager(gameScene: self)
