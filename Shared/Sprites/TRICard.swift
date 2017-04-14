@@ -14,6 +14,10 @@ class TRICard: SKNode {
     weak var front: SKSpriteNode?
     var size: CGSize = TRIGameSceneLayout.cardSize
     
+    override init() {
+        super.init()
+    }
+    
     init(cardModel: TRICardModel) {
         super.init()
         self.cardModel = cardModel

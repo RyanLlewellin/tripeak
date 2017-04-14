@@ -26,4 +26,20 @@ enum Rank: Int {
             return String(self.rawValue)
         }
     }
+    
+    static let allValues = [
+        Rank.Two,
+        Rank.Three,
+        Rank.Four,
+        Rank.Five,
+        Rank.Six,
+        Rank.Seven,
+        Rank.Eight,
+        Rank.Nine,
+        Rank.Ten,
+        Rank.Jack,
+        Rank.Queen,
+        Rank.King,
+        Rank.Ace
+    ]
 }

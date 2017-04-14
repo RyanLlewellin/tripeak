@@ -9,14 +9,12 @@
 import SpriteKit
 
 class TRIGameScene: SKScene {
+    
+    private var gameSetupManager: TRIGameSetupManager?
   
     override func didMove(to view: SKView) {
-        let model = TRICardModel(suit: .Clubs, rank: .Ace)
-        let card = TRICard(cardModel: model)
-        card.position = CGPoint(
-            x: self.size.width / 2,
-            y: self.size.height / 2
-        )
-        self.addChild(card)
+        let gameSetupManager = TRIGameSetupManager(gameScene: self)
+        self.gameSetupManager = gameSetupManager
+        self.gameSetupManager!.setup()
     }
 }

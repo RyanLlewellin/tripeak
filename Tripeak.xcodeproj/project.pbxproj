@@ -61,6 +61,7 @@
 		949127E71EA182A6005AF926 /* TRICardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E61EA182A6005AF926 /* TRICardModel.swift */; };
 		949127E91EA18377005AF926 /* TRICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E81EA18377005AF926 /* TRICard.swift */; };
 		949127EB1EA184F1005AF926 /* TRIGameSceneLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */; };
+		949127ED1EA188E6005AF926 /* TRIGameSetupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +157,7 @@
 		949127E61EA182A6005AF926 /* TRICardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardModel.swift; sourceTree = "<group>"; };
 		949127E81EA18377005AF926 /* TRICard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICard.swift; sourceTree = "<group>"; };
 		949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameSceneLayout.swift; sourceTree = "<group>"; };
+		949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameSetupManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -413,6 +415,7 @@
 		83F642061C34397200CCABB7 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -568,6 +571,7 @@
 				83C0782A1C44044300CE5AE6 /* ALSoundSourcePool.m in Sources */,
 				949127E71EA182A6005AF926 /* TRICardModel.swift in Sources */,
 				83C078281C44044300CE5AE6 /* ALDevice.m in Sources */,
+				949127ED1EA188E6005AF926 /* TRIGameSetupManager.swift in Sources */,
 				83D8E12C1C43F34E003E84F3 /* TRIBaseOverlay.swift in Sources */,
 				83D8E0C11C43F167003E84F3 /* TRISounds.swift in Sources */,
 				83C0782E1C44044300CE5AE6 /* OALAudioSession.m in Sources */,
