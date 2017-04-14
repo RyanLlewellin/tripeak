@@ -10,8 +10,8 @@ import SpriteKit
 
 class TRISimpleButton: TRIBaseButton {
   
-  private weak var defaultImg: SKSpriteNode?
-  private weak var background: SKSpriteNode?
+  fileprivate weak var defaultImg: SKSpriteNode?
+  fileprivate weak var background: SKSpriteNode?
   
   override init(texture: SKTexture?, color: SKColor, size: CGSize) {
     super.init(texture: texture, color: color, size: size)
@@ -54,20 +54,20 @@ class TRISimpleButton: TRIBaseButton {
   }
   
   convenience init(image: String, size: CGSize) {
-    self.init(image: image, size: size, color: UIColor.blackColor())
+    self.init(image: image, size: size, color: UIColor.black)
   }
   
-  override func updateHover(animated: Bool, hover: Bool) {
+  override func updateHover(_ animated: Bool, hover: Bool) {
     var alpha: CGFloat = 0.8
     if !hover {
       alpha = 0.2
     }
     if animated {
-      let action: SKAction = SKAction.fadeAlphaTo(
-        alpha,
+      let action: SKAction = SKAction.fadeAlpha(
+        to: alpha,
         duration: 0.2
       )
-      self.background!.runAction(action)
+      self.background!.run(action)
     } else {
       self.background!.alpha = alpha
     }

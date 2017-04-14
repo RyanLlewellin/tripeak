@@ -10,15 +10,15 @@ import SpriteKit
 
 class TRIGameScene: SKScene {
   
-  override func didMoveToView(view: SKView) {
+  override func didMove(to view: SKView) {
     let myLabel = SKLabelNode(
       fontNamed: Fonts.HelveticaNeueLight.rawValue
     )
     myLabel.text = "Hello, CodeCaptain!"
     myLabel.fontSize = 45
     myLabel.position = CGPoint(
-      x:CGRectGetMidX(self.frame),
-      y:CGRectGetMidY(self.frame)
+      x:self.frame.midX,
+      y:self.frame.midY
     )
     
     self.addChild(myLabel)

@@ -9,21 +9,21 @@
 import UIKit
 
 protocol TRIParallaxEffectDelegate {
-  func keyPathsAndRelativeValuesForViewerOffset(values: [String : AnyObject]?)
+  func keyPathsAndRelativeValuesForViewerOffset(_ values: [String : AnyObject]?)
 }
 
 class TRIParallaxEffect: UIInterpolatingMotionEffect {
   
   var delegate: TRIParallaxEffectDelegate?
   
-  override func keyPathsAndRelativeValuesForViewerOffset(
-    viewerOffset: UIOffset) -> [String : AnyObject]? {
+  override func keyPathsAndRelativeValues(
+    forViewerOffset viewerOffset: UIOffset) -> [String : Any]? {
       
-      let values = super.keyPathsAndRelativeValuesForViewerOffset(
-        viewerOffset
+      let values = super.keyPathsAndRelativeValues(
+        forViewerOffset: viewerOffset
       )
       if let delegate = self.delegate {
-        delegate.keyPathsAndRelativeValuesForViewerOffset(values)
+        delegate.keyPathsAndRelativeValuesForViewerOffset(values as! [String : AnyObject])
       }
       
       return values

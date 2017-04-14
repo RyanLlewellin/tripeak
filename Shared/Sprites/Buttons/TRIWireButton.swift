@@ -42,8 +42,8 @@ class TRIWireButton: TRIBaseButton {
     self.addChild(self.label)
     self.label.fontSize = 24
     self.label.fontName = Fonts.HelveticaNeueLight.rawValue
-    self.label.horizontalAlignmentMode = .Center
-    self.label.verticalAlignmentMode = .Center
+    self.label.horizontalAlignmentMode = .center
+    self.label.verticalAlignmentMode = .center
     
     self.updateHover(false, hover: self.hover)
     
@@ -74,7 +74,7 @@ class TRIWireButton: TRIBaseButton {
     )
     self.border.lineWidth = 4.0
     self.border.strokeColor = color
-    self.border.lineJoin = .Round
+    self.border.lineJoin = .round
     self.border.position = CGPoint(
       x: -size.width / 2,
       y: -size.height / 2
@@ -93,15 +93,15 @@ class TRIWireButton: TRIBaseButton {
     
   }
   
-  override func updateHover(animated: Bool, hover: Bool) {
+  override func updateHover(_ animated: Bool, hover: Bool) {
     var alpha: CGFloat = 1.0
     if !hover {
       alpha = 0.25
     }
     if animated {
-      let action: SKAction = SKAction.fadeAlphaTo(alpha, duration: 0.1)
-      self.border.runAction(action)
-      self.label.runAction(action)
+      let action: SKAction = SKAction.fadeAlpha(to: alpha, duration: 0.1)
+      self.border.run(action)
+      self.label.run(action)
     } else {
       self.border.alpha = alpha
       self.label.alpha = alpha

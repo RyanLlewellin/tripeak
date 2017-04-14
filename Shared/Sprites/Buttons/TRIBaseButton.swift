@@ -18,45 +18,45 @@ class TRIBaseButton: SKSpriteNode {
     }
   }
   
-  private var targets: [ObjectSelectorPair] = [ObjectSelectorPair]()
+  fileprivate var targets: [ObjectSelectorPair] = [ObjectSelectorPair]()
   
-  func addTarget(target: NSObject, selector: Selector) {
+  func addTarget(_ target: NSObject, selector: Selector) {
     let weakTarget = TRIWeakContainer(value: target)
     self.targets.append((object: weakTarget, selector: selector))
   }
   
-  func removeTarget(target: NSObject, selector: Selector) {
+  func removeTarget(_ target: NSObject, selector: Selector) {
     var index: Int = 0
     for objectSelectorPair: ObjectSelectorPair in self.targets {
       let obj = objectSelectorPair.object
       let sel = objectSelectorPair.selector
       if obj.value == target && sel == selector {
-        self.targets.removeAtIndex(index)
+        self.targets.remove(at: index)
       }
-      index++
+      index += 1
     }
   }
   
-  override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.hover = true
   }
   
-  override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.hover = false
     let touch = touches.first!
     if let parent = self.parent {
-      let point = touch.locationInNode(parent)
-      if self.containsPoint(point) {
+      let point = touch.location(in: parent)
+      if self.contains(point) {
         self.handlePress()
       }
     }
   }
   
-  override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+  override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
     let touch = touches.first!
     if let parent = self.parent {
-      let point = touch.locationInNode(parent)
-      if self.containsPoint(point) {
+      let point = touch.location(in: parent)
+      if self.contains(point) {
         self.hover = true
       } else {
         self.hover = false
@@ -68,18 +68,18 @@ class TRIBaseButton: SKSpriteNode {
     for objectSelectorPair: ObjectSelectorPair in self.targets {
       let obj = objectSelectorPair.object
       let sel = objectSelectorPair.selector
-      obj.value!.performSelector(sel)
+      obj.value!.perform(sel)
     }
   }
   
-  func updateHover(animated: Bool, hover: Bool) {
+  func updateHover(_ animated: Bool, hover: Bool) {
     var alpha: CGFloat = 1.0
     if !hover {
       alpha = 0.2
     }
     if animated {
-      let action: SKAction = SKAction.fadeAlphaTo(alpha, duration: 0.1)
-      self.runAction(action)
+      let action: SKAction = SKAction.fadeAlpha(to: alpha, duration: 0.1)
+      self.run(action)
     } else {
       self.alpha = alpha
     }

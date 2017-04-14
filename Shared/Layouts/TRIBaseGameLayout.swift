@@ -9,30 +9,30 @@
 import UIKit
 
 enum TRIBaseGameLayoutDevice: Int {
-  case IPhone4OrLess
-  case IPhone5
-  case IPhone6
-  case IPhone6p
-  case IPad
+  case iPhone4OrLess
+  case iPhone5
+  case iPhone6
+  case iPhone6p
+  case iPad
 }
 
 class TRIBaseGameLayout: NSObject {
   
-  class func setup(layout: TRIBaseGameLayoutDevice) {
+  class func setup(_ layout: TRIBaseGameLayoutDevice) {
     switch layout {
-    case .IPhone4OrLess:
+    case .iPhone4OrLess:
       self.setupIphone4OrLess()
       break
-    case .IPhone5:
+    case .iPhone5:
       self.setupIphone5()
       break
-    case .IPhone6:
+    case .iPhone6:
       self.setupIphone6()
       break
-    case .IPhone6p:
+    case .iPhone6p:
       self.setupIphone6p()
       break
-    case .IPad:
+    case .iPad:
       self.setupIpad()
       break
     }

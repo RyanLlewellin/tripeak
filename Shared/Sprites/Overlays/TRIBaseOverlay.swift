@@ -11,7 +11,7 @@ import SpriteKit
 class TRIBaseOverlay: SKNode {
   
   weak var gameScene: TRIGameScene?
-  weak private var backgroundSprite: SKSpriteNode!
+  weak fileprivate var backgroundSprite: SKSpriteNode!
   internal var sizeReference: CGSize!
   internal var center: CGPoint {
     get {
@@ -31,17 +31,17 @@ class TRIBaseOverlay: SKNode {
     super.init(coder: aDecoder)!
   }
   
-  func hide(completion: (() -> Void)?) {
+  func hide(_ completion: (() -> Void)?) {
     // Create a fade action
-    let action = SKAction.fadeAlphaTo(
-      0,
+    let action = SKAction.fadeAlpha(
+      to: 0,
       duration: 0.3
     )
     // Run the action on self
-    self.runAction(
+    self.run(
       action,
       completion: {
-        self.hidden = true
+        self.isHidden = true
         self.alpha = 1.0
         // If we have a completion block, execute it
         if let completion = completion {
@@ -53,18 +53,18 @@ class TRIBaseOverlay: SKNode {
   internal func fadeInBackground() {
     self.backgroundSprite.alpha = 0
     // Create the action
-    let bgFadeAction = SKAction.fadeAlphaTo(
-      1.0,
+    let bgFadeAction = SKAction.fadeAlpha(
+      to: 1.0,
       duration: 0.5
     )
-    bgFadeAction.timingMode = .EaseOut
+    bgFadeAction.timingMode = .easeOut
     // Run the action on the background
-    self.backgroundSprite.runAction(bgFadeAction)
+    self.backgroundSprite.run(bgFadeAction)
   }
   
   internal func fadeIn(
-    element: SKNode,
-    delay: NSTimeInterval,
+    _ element: SKNode,
+    delay: TimeInterval,
     completion: (() -> Void)?) {
       
       element.alpha = 0
@@ -73,19 +73,19 @@ class TRIBaseOverlay: SKNode {
       var actions: [SKAction] = []
       // If the delay is set, add a wait action
       if delay > 0 {
-        let delayAction = SKAction.waitForDuration(delay)
+        let delayAction = SKAction.wait(forDuration: delay)
         // Add it to the array
         actions.append(delayAction)
       }
       
       // Create a fade action
-      let fadeAction = SKAction.fadeAlphaTo(1.0, duration: 0.8)
-      fadeAction.timingMode = .EaseOut
+      let fadeAction = SKAction.fadeAlpha(to: 1.0, duration: 0.8)
+      fadeAction.timingMode = .easeOut
       // Add it to the array
       actions.append(fadeAction)
       
       // Run an action sequence with the actions array on the input element
-      element.runAction(SKAction.sequence(actions), completion: {
+      element.run(SKAction.sequence(actions), completion: {
         // If we have a completion, run it
         if let completion = completion {
           completion()
@@ -95,7 +95,7 @@ class TRIBaseOverlay: SKNode {
   }
   
   internal func animateElementUp(
-    element: SKNode,
+    _ element: SKNode,
     endPosition: CGPoint,
     completion: (() -> Void)?) {
       
@@ -112,21 +112,21 @@ class TRIBaseOverlay: SKNode {
       element.position = point
       
       // Wait action
-      let elementDelayAction = SKAction.waitForDuration(0.4)
+      let elementDelayAction = SKAction.wait(forDuration: 0.4)
       
       // Move action
-      let elementMoveAction = SKAction.moveTo(
-        endPosition,
+      let elementMoveAction = SKAction.move(
+        to: endPosition,
         duration: 0.4
       )
-      elementMoveAction.timingMode = .EaseOut
+      elementMoveAction.timingMode = .easeOut
       
       // Fade action
-      let elementFadeAction = SKAction.fadeAlphaTo(
-        1.0,
+      let elementFadeAction = SKAction.fadeAlpha(
+        to: 1.0,
         duration: 0.4
       )
-      elementFadeAction.timingMode = .EaseOut
+      elementFadeAction.timingMode = .easeOut
       
       // Create a group with the move and fade action
       let elementGroupAction = SKAction.group(
@@ -134,7 +134,7 @@ class TRIBaseOverlay: SKNode {
       )
       
       // Run the action sequence
-      element.runAction(
+      element.run(
         SKAction.sequence([elementDelayAction, elementGroupAction]),
         completion: {
           // If we have a completion block, execute it
@@ -150,7 +150,7 @@ class TRIBaseOverlay: SKNode {
     
     // Create the background sprite
     let backgroundSprite = SKSpriteNode(
-      color: SKColor.blackColor().colorWithAlphaComponent(0.95),
+      color: SKColor.black.withAlphaComponent(0.95),
       size: self.sizeReference
     )
     
@@ -158,7 +158,7 @@ class TRIBaseOverlay: SKNode {
     self.addChild(backgroundSprite)
     self.backgroundSprite = backgroundSprite
     
-    self.hidden = true
+    self.isHidden = true
     
   }
   
