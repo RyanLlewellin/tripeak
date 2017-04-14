@@ -23,7 +23,7 @@ class TRIParallaxEffect: UIInterpolatingMotionEffect {
         forViewerOffset: viewerOffset
       )
       if let delegate = self.delegate {
-        delegate.keyPathsAndRelativeValuesForViewerOffset(values as! [String : AnyObject])
+        delegate.keyPathsAndRelativeValuesForViewerOffset(values! as [String : AnyObject])
       }
       
       return values

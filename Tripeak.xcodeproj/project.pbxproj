@@ -56,6 +56,11 @@
 		83F641FD1C34387900CCABB7 /* iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F641FC1C34387900CCABB7 /* iOS.xcassets */; };
 		83F6420E1C34397200CCABB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F642011C34397200CCABB7 /* Assets.xcassets */; };
 		83F6420F1C34397200CCABB7 /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F642021C34397200CCABB7 /* Cards.xcassets */; };
+		949127E11EA1810F005AF926 /* TRICardSuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E01EA1810F005AF926 /* TRICardSuit.swift */; };
+		949127E31EA1816A005AF926 /* TRICardRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E21EA1816A005AF926 /* TRICardRank.swift */; };
+		949127E71EA182A6005AF926 /* TRICardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E61EA182A6005AF926 /* TRICardModel.swift */; };
+		949127E91EA18377005AF926 /* TRICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E81EA18377005AF926 /* TRICard.swift */; };
+		949127EB1EA184F1005AF926 /* TRIGameSceneLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -146,6 +151,11 @@
 		83F641FC1C34387900CCABB7 /* iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = iOS.xcassets; sourceTree = "<group>"; };
 		83F642011C34397200CCABB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F642021C34397200CCABB7 /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
+		949127E01EA1810F005AF926 /* TRICardSuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardSuit.swift; sourceTree = "<group>"; };
+		949127E21EA1816A005AF926 /* TRICardRank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardRank.swift; sourceTree = "<group>"; };
+		949127E61EA182A6005AF926 /* TRICardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardModel.swift; sourceTree = "<group>"; };
+		949127E81EA18377005AF926 /* TRICard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICard.swift; sourceTree = "<group>"; };
+		949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameSceneLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				83D8E0EC1C43F2D0003E84F3 /* TRIBaseGameLayout.swift */,
+				949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */,
 			);
 			path = Layouts;
 			sourceTree = "<group>";
@@ -300,6 +311,7 @@
 			children = (
 				83D8E11C1C43F34E003E84F3 /* Buttons */,
 				83D8E1201C43F34E003E84F3 /* Overlays */,
+				949127E81EA18377005AF926 /* TRICard.swift */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -385,6 +397,8 @@
 				83D8E0B71C43F167003E84F3 /* TRIFonts.swift */,
 				83D8E0B81C43F167003E84F3 /* TRIKeyCodes.swift */,
 				83D8E0B91C43F167003E84F3 /* TRISounds.swift */,
+				949127E01EA1810F005AF926 /* TRICardSuit.swift */,
+				949127E21EA1816A005AF926 /* TRICardRank.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -406,6 +420,7 @@
 		83F642071C34397200CCABB7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				949127E61EA182A6005AF926 /* TRICardModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -462,7 +477,7 @@
 				TargetAttributes = {
 					83F641DF1C34360E00CCABB7 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = PZ933N4H8M;
+						DevelopmentTeam = 3KHLJVPN8H;
 						LastSwiftMigration = 0830;
 					};
 				};
@@ -531,22 +546,27 @@
 				83C0781D1C44044200CE5AE6 /* OALAudioActions.m in Sources */,
 				83F641EA1C34360E00CCABB7 /* IOSGameViewController.swift in Sources */,
 				83C0782D1C44044300CE5AE6 /* OpenALManager.m in Sources */,
+				949127E91EA18377005AF926 /* TRICard.swift in Sources */,
 				83C078341C44044300CE5AE6 /* OALAudioFile.m in Sources */,
 				83C078201C44044200CE5AE6 /* OALAudioTrackNotifications.m in Sources */,
 				83C078251C44044300CE5AE6 /* ALCaptureDevice.m in Sources */,
 				83C078291C44044300CE5AE6 /* ALListener.m in Sources */,
+				949127E11EA1810F005AF926 /* TRICardSuit.swift in Sources */,
 				83C078231C44044200CE5AE6 /* OALSimpleAudio.m in Sources */,
 				83C078351C44044300CE5AE6 /* OALTools.m in Sources */,
 				83C0781C1C44044200CE5AE6 /* OALActionManager.m in Sources */,
+				949127EB1EA184F1005AF926 /* TRIGameSceneLayout.swift in Sources */,
 				83C078311C44044300CE5AE6 /* mach_timing.c in Sources */,
 				83C078331C44044300CE5AE6 /* NSMutableDictionary+WeakReferences.m in Sources */,
 				83D8E0E01C43F217003E84F3 /* TRIWeakContainer.swift in Sources */,
 				83D8E0F01C43F2D0003E84F3 /* TRIBaseGameLayout.swift in Sources */,
+				949127E31EA1816A005AF926 /* TRICardRank.swift in Sources */,
 				83C078211C44044200CE5AE6 /* OALAudioTracks.m in Sources */,
 				83C078301C44044300CE5AE6 /* IOSVersion.m in Sources */,
 				83D8E0DF1C43F217003E84F3 /* TRIParallaxEffect.swift in Sources */,
 				83C0782B1C44044300CE5AE6 /* ALSource.m in Sources */,
 				83C0782A1C44044300CE5AE6 /* ALSoundSourcePool.m in Sources */,
+				949127E71EA182A6005AF926 /* TRICardModel.swift in Sources */,
 				83C078281C44044300CE5AE6 /* ALDevice.m in Sources */,
 				83D8E12C1C43F34E003E84F3 /* TRIBaseOverlay.swift in Sources */,
 				83D8E0C11C43F167003E84F3 /* TRISounds.swift in Sources */,
@@ -677,6 +697,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Launch;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3KHLJVPN8H;
 				INFOPLIST_FILE = Tripeak_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -697,6 +718,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Launch;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3KHLJVPN8H;
 				INFOPLIST_FILE = Tripeak_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
