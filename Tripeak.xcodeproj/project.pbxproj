@@ -62,6 +62,7 @@
 		949127E91EA18377005AF926 /* TRICard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E81EA18377005AF926 /* TRICard.swift */; };
 		949127EB1EA184F1005AF926 /* TRIGameSceneLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */; };
 		949127ED1EA188E6005AF926 /* TRIGameSetupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */; };
+		949127EF1EA1A866005AF926 /* TRIBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EE1EA1A866005AF926 /* TRIBack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -158,6 +159,7 @@
 		949127E81EA18377005AF926 /* TRICard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICard.swift; sourceTree = "<group>"; };
 		949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameSceneLayout.swift; sourceTree = "<group>"; };
 		949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameSetupManager.swift; sourceTree = "<group>"; };
+		949127EE1EA1A866005AF926 /* TRIBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIBack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +403,7 @@
 				83D8E0B91C43F167003E84F3 /* TRISounds.swift */,
 				949127E01EA1810F005AF926 /* TRICardSuit.swift */,
 				949127E21EA1816A005AF926 /* TRICardRank.swift */,
+				949127EE1EA1A866005AF926 /* TRIBack.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -553,6 +556,7 @@
 				83C078341C44044300CE5AE6 /* OALAudioFile.m in Sources */,
 				83C078201C44044200CE5AE6 /* OALAudioTrackNotifications.m in Sources */,
 				83C078251C44044300CE5AE6 /* ALCaptureDevice.m in Sources */,
+				949127EF1EA1A866005AF926 /* TRIBack.swift in Sources */,
 				83C078291C44044300CE5AE6 /* ALListener.m in Sources */,
 				949127E11EA1810F005AF926 /* TRICardSuit.swift in Sources */,
 				83C078231C44044200CE5AE6 /* OALSimpleAudio.m in Sources */,
