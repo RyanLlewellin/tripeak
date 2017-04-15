@@ -65,13 +65,27 @@ class TRIGameFlowManager: NSObject {
     func handleTouchStart(point: CGPoint) {
         for card: TRICard in self.peakCards {
             if card.contains(point) && card.clickable {
-                card.remove()
-                
-                // Remove them from the peak
-                self.removeCardFromPeak(peak: &self.leftPeak, card: card)
-                self.removeCardFromPeak(peak: &self.centerPeak, card: card)
-                self.removeCardFromPeak(peak: &self.rightPeak, card: card)
-                
+                if self.validateCardAgainstCurrentCard(cardModel: card.cardModel!) {
+                    card.remove()
+                    
+                    let position = CGPoint(
+                        x: self.currentCard!.finalPosition!.x + TRIGameSceneLayout.openCardOffset,
+                        y: self.currentCard!.finalPosition!.y
+                    )
+                    card.finalPosition = position
+                    
+                    let animation = SKAction.move(to: position, duration: 0.2)
+                    animation.timingMode = .easeOut
+                    card.run(animation)
+                    card.zPosition = self.currentCard!.zPosition + 1
+                    
+                    self.gameScene!.currentCard = card
+                    
+                    // Remove them from the peak
+                    self.removeCardFromPeak(peak: &self.leftPeak, card: card)
+                    self.removeCardFromPeak(peak: &self.centerPeak, card: card)
+                    self.removeCardFromPeak(peak: &self.rightPeak, card: card)
+                }
                 return
             }
         }
@@ -97,6 +111,27 @@ class TRIGameFlowManager: NSObject {
                 self.gameScene!.cardDeckGraphics.remove(at: cardIndex!)
             }
         }
+    }
+    
+    private func validateCardAgainstCurrentCard(cardModel: TRICardModel) -> Bool {
+        
+        if cardModel.rank.rawValue == currentCard!.cardModel!.rank.rawValue + 1 {
+            return true
+        }
+        
+        if cardModel.rank.rawValue == currentCard!.cardModel!.rank.rawValue - 1 {
+            return true
+        }
+        
+        if currentCard!.cardModel!.rank == .Ace && cardModel.rank == .King {
+            return true
+        }
+        
+        if currentCard!.cardModel!.rank == .King && cardModel.rank == .Ace {
+            return true
+        }
+        
+        return false
     }
     
     private func removeCardFromPeak( peak: inout [TRICard], card: TRICard) {
