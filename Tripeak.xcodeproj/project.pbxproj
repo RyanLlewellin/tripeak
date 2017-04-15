@@ -63,6 +63,7 @@
 		949127EB1EA184F1005AF926 /* TRIGameSceneLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */; };
 		949127ED1EA188E6005AF926 /* TRIGameSetupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */; };
 		949127EF1EA1A866005AF926 /* TRIBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EE1EA1A866005AF926 /* TRIBack.swift */; };
+		949127F11EA2904E005AF926 /* TRIGameFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +161,7 @@
 		949127EA1EA184F1005AF926 /* TRIGameSceneLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameSceneLayout.swift; sourceTree = "<group>"; };
 		949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameSetupManager.swift; sourceTree = "<group>"; };
 		949127EE1EA1A866005AF926 /* TRIBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIBack.swift; sourceTree = "<group>"; };
+		949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameFlowManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -419,6 +421,7 @@
 			isa = PBXGroup;
 			children = (
 				949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */,
+				949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				83D8E1291C43F34E003E84F3 /* TRIBaseButton.swift in Sources */,
 				83C078271C44044300CE5AE6 /* ALContext.m in Sources */,
 				83D8E0BD1C43F167003E84F3 /* TRIDevices.swift in Sources */,
+				949127F11EA2904E005AF926 /* TRIGameFlowManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

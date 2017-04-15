@@ -66,4 +66,8 @@ class TRICard: SKNode {
             self.back!.isHidden = false
         }
     }
+    
+    func remove() {
+        self.removeFromParent()
+    }
 }
