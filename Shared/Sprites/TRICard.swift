@@ -9,6 +9,11 @@
 import SpriteKit
 
 class TRICard: SKNode {
+    
+    // overrides print statement
+    override var description: String {
+        return "\(self.cardModel!.rank) of \(self.cardModel!.suit)"
+    }
 
     var cardModel: TRICardModel?
     weak var front: SKSpriteNode?
