@@ -16,7 +16,14 @@ class TRICard: SKNode {
     
     var manager: TRICardManager?
     
-    var removed: Bool = false
+    var clickable: Bool = true
+    var removed: Bool = false {
+        didSet {
+            if removed {
+                self.clickable = false
+            }
+        }
+    }
 
     var open: Bool = false {
         didSet {
@@ -68,10 +75,12 @@ class TRICard: SKNode {
     
     private func handleOpenClosed() {
         if open {
+            self.clickable = true
             self.front!.isHidden = false
             self.back!.isHidden = true
         }
         else {
+            self.clickable = false;
             self.front!.isHidden = true
             self.back!.isHidden = false
         }
@@ -91,6 +100,34 @@ class TRICard: SKNode {
         for subscriber: TRICardDelegate in self.subscribers {
             subscriber.cardStatusChanged(card: self)
         }
+    }
+    
+    private func updateAnimationWithScale(scale: CGFloat, element: SKNode) {
+        element.xScale = scale
+        element.yScale = scale
+        let scaleAction = SKAction.scale(to: 1, duration: 0.2)
+        element.run(scaleAction)
+        
+    }
+    
+    func flip() {
+        if self.open {
+            return
+        }
+        self.clickable = true
+        
+        let scaleXAction = SKAction.scaleX(to: 0.05, duration: 0.225)
+        let scaleYAction = SKAction.scaleY(to: 1.3, duration: 0.225)
+        
+        let groupAction = SKAction.group([scaleXAction, scaleYAction])
+        self.back!.run(groupAction, completion: {() -> Void in
+            self.open = true
+            self.updateAnimationWithScale(scale: 1.25, element:self.front!)
+        })
+    }
+    
+    func flipCompletion() {
+        
     }
 }
 
