@@ -10,6 +10,15 @@ import SpriteKit
 
 class TRIGameSetupManager: NSObject {
 
+    private var cardDeckGraphics: [TRICard] {
+        get {
+            return self.gameScene!.cardDeckGraphics
+        }
+        set {
+            self.gameScene!.cardDeckGraphics = newValue
+        }
+    }
+    
     private var leftOrderedPeakRows: [[TRICard]] = []
     private var centerOrderedPeakRows: [[TRICard]] = []
     private var rightOrderedPeakRows: [[TRICard]] = []
@@ -55,6 +64,47 @@ class TRIGameSetupManager: NSObject {
         self.setupTriPeak()
         self.splitPeaksIntoRows()
         self.setupCardManagers()
+        self.deckSetup()
+        self.beginGame()
+    }
+    
+    func deckSetup() {
+        for i in 0..<self.cardDeck.count {
+            let card = TRICard(cardModel: self.getRandomCard())
+            card.position = CGPoint(
+                x: TRIGameSceneLayout.deckPosition.x,
+                y: TRIGameSceneLayout.deckPosition.y + CGFloat(i) / 5
+            )
+            self.gameScene!.addChild(card)
+            self.cardDeckGraphics.append(card)
+        }
+    }
+    
+    private func beginGame() {
+        let waitAction = SKAction.wait(forDuration: 0.2)
+        self.gameScene!.run(waitAction, completion: {() -> Void in
+            self.openUpCurrentCard()
+        })
+    }
+    
+    private func openUpCurrentCard() {
+        let card = self.cardDeckGraphics.last!
+        let position = CGPoint(
+            x: TRIGameSceneLayout.deckPosition.x + card.size.width + 15,
+            y: TRIGameSceneLayout.deckPosition.y
+        )
+        card.finalPosition = position
+        
+        let animation = SKAction.move(to: position, duration: 0.2)
+        animation.timingMode = .easeOut
+        card.run(animation, completion: {() -> Void in
+            card.flip()
+            card.zPosition = 2000
+            self.gameScene!.currentCard = card
+        })
+        
+        let cardIndex = self.cardDeckGraphics.index(of: card)
+        self.cardDeckGraphics.remove(at: cardIndex!)
     }
     
     private func setupCardManagers() {

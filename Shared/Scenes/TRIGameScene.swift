@@ -15,6 +15,8 @@ class TRIGameScene: SKScene {
     var leftPeak: [TRICard] = []
     var centerPeak: [TRICard] = []
     var rightPeak: [TRICard] = []
+    var cardDeckGraphics: [TRICard] = []
+    weak var currentCard: TRICard?
   
     override func didMove(to view: SKView) {
         let gameSetupManager = TRIGameSetupManager(gameScene: self)

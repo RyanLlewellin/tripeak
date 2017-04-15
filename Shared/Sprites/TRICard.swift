@@ -16,6 +16,8 @@ class TRICard: SKNode {
     
     var manager: TRICardManager?
     
+    var finalPosition: CGPoint?
+    
     var clickable: Bool = true
     var removed: Bool = false {
         didSet {
@@ -124,10 +126,6 @@ class TRICard: SKNode {
             self.open = true
             self.updateAnimationWithScale(scale: 1.25, element:self.front!)
         })
-    }
-    
-    func flipCompletion() {
-        
     }
 }
 
