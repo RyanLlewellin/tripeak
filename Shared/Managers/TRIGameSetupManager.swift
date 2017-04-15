@@ -10,6 +10,10 @@ import SpriteKit
 
 class TRIGameSetupManager: NSObject {
 
+    private var leftOrderedPeakRows: [[TRICard]] = []
+    private var centerOrderedPeakRows: [[TRICard]] = []
+    private var rightOrderedPeakRows: [[TRICard]] = []
+    
     private var openCards: [TRICard] = []
     private weak var gameScene: TRIGameScene?
     private var cardDeck: [TRICardModel] = []
@@ -49,6 +53,39 @@ class TRIGameSetupManager: NSObject {
     func setup() {
         self.createDeck()
         self.setupTriPeak()
+        self.splitPeaksIntoRows()
+        self.setupCardManagers()
+    }
+    
+    private func setupCardManagers() {
+        self.setupManagersForPeak(peakRows: leftOrderedPeakRows)
+        self.setupManagersForPeak(peakRows: centerOrderedPeakRows)
+        self.setupManagersForPeak(peakRows: rightOrderedPeakRows)
+    }
+    
+    func setupManagersForPeak(peakRows: [[TRICard]]) {
+        var row: Int = 0
+        for currentRow: [TRICard] in peakRows {
+            let isLastRow: Bool = (row == peakRows.count - 1)
+            if(!isLastRow) {
+                var indexOfCurrentCard: Int = 0
+                for currentCard: TRICard in currentRow {
+                    let leftBlockingCard: TRICard = peakRows[row + 1][indexOfCurrentCard]
+                    let rightBlockingCard: TRICard = peakRows[row + 1][indexOfCurrentCard + 1]
+                    
+                    let manager = TRICardManager(
+                        managingCard: currentCard,
+                        leftBlockingCard: leftBlockingCard,
+                        rightBlockingCard: rightBlockingCard
+                    )
+                    
+                    currentCard.manager = manager
+                    
+                    indexOfCurrentCard += 1
+                }
+            }
+            row += 1
+        }
     }
     
     func createDeck() {
@@ -140,6 +177,32 @@ class TRIGameSetupManager: NSObject {
         )
         
         self.setupOpenCards()
+    }
+    
+    private func splitPeaksIntoRows() {
+        leftOrderedPeakRows = self.splitPeakIntoRows(peak: self.leftPeak)
+        centerOrderedPeakRows = self.splitPeakIntoRows(peak: self.centerPeak)
+        rightOrderedPeakRows = self.splitPeakIntoRows(peak: self.rightPeak)
+    }
+    
+    private func splitPeakIntoRows(peak: [TRICard]) -> [[TRICard]] {
+        var currentRow = 0
+        var cardsOnCurrentRow = 1
+        var currentCardNum = 0
+        
+        var peakRows: [[TRICard]] = [[]]
+        
+        for card: TRICard in peak {
+            if currentCardNum == cardsOnCurrentRow { // move to next row
+                peakRows.append([])
+                currentCardNum = 0
+                currentRow += 1
+                cardsOnCurrentRow += 1
+            }
+            peakRows[currentRow].append(card)
+            currentCardNum += 1
+        }
+        return peakRows
     }
     
     private func setupOpenCards() {

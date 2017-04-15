@@ -55,7 +55,7 @@ class TRIGameFlowManager: NSObject {
     
     func handleTouchStart(point: CGPoint) {
         for card: TRICard in self.peakCards {
-            if card.contains(point) {
+            if card.contains(point) && card.open {
                 card.remove()
                 
                 // Remove them from the peak
