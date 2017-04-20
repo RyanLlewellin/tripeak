@@ -8,13 +8,30 @@
 
 import SpriteKit
 
+protocol TRIHighscoreManagerDelegate: NSObjectProtocol {
+    func scoreUpdated(score: Int)
+}
+
 class TRIHighScoreManager: NSObject {
+    
+    private var subscribers: [TRIHighscoreManagerDelegate] = []
 
     static var instance = TRIHighScoreManager()
+    var formattedScore: String {
+        get {
+            let numberFormatter = NumberFormatter()
+            numberFormatter.numberStyle = .decimal
+            return numberFormatter.string(
+                from: NSNumber(integerLiteral: self.score)
+            )!
+        }
+    }
+    
     var inverseMultiplier: CGFloat = 0
     var score: Int = 0 {
         didSet {
             print("Score: \(score)")
+            self.notifySubscribers()
         }
     }
     
@@ -37,10 +54,10 @@ class TRIHighScoreManager: NSObject {
                 self.score += self.multiplied(number: num * 250)
             }
         }
-        
     }
     
     func reset() {
+        self.subscribers = []
         self.inverseMultiplier = 0
         self.score = 0
     }
@@ -48,6 +65,16 @@ class TRIHighScoreManager: NSObject {
     private func multiplied(number: Double) -> Int {
         let num = number + number * Double(1 - inverseMultiplier)
         return Int(round(num / 5) * 5) // make sure rounded to nearest 5
+    }
+    
+    func addSubscriber(subscriber: TRIHighscoreManagerDelegate) {
+        self.subscribers.append(subscriber)
+    }
+    
+    private func notifySubscribers() {
+        for subscriber: TRIHighscoreManagerDelegate in subscribers {
+            subscriber.scoreUpdated(score: score)
+        }
     }
     
 }
