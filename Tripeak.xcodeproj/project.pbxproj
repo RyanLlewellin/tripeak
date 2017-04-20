@@ -56,6 +56,7 @@
 		83F641FD1C34387900CCABB7 /* iOS.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F641FC1C34387900CCABB7 /* iOS.xcassets */; };
 		83F6420E1C34397200CCABB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F642011C34397200CCABB7 /* Assets.xcassets */; };
 		83F6420F1C34397200CCABB7 /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F642021C34397200CCABB7 /* Cards.xcassets */; };
+		945184DA1EA94FE00052766D /* TRIHighScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945184D91EA94FE00052766D /* TRIHighScoreManager.swift */; };
 		949127E11EA1810F005AF926 /* TRICardSuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E01EA1810F005AF926 /* TRICardSuit.swift */; };
 		949127E31EA1816A005AF926 /* TRICardRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E21EA1816A005AF926 /* TRICardRank.swift */; };
 		949127E71EA182A6005AF926 /* TRICardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E61EA182A6005AF926 /* TRICardModel.swift */; };
@@ -155,6 +156,7 @@
 		83F641FC1C34387900CCABB7 /* iOS.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = iOS.xcassets; sourceTree = "<group>"; };
 		83F642011C34397200CCABB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83F642021C34397200CCABB7 /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
+		945184D91EA94FE00052766D /* TRIHighScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIHighScoreManager.swift; sourceTree = "<group>"; };
 		949127E01EA1810F005AF926 /* TRICardSuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardSuit.swift; sourceTree = "<group>"; };
 		949127E21EA1816A005AF926 /* TRICardRank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardRank.swift; sourceTree = "<group>"; };
 		949127E61EA182A6005AF926 /* TRICardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardModel.swift; sourceTree = "<group>"; };
@@ -425,6 +427,7 @@
 				949127EC1EA188E6005AF926 /* TRIGameSetupManager.swift */,
 				949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */,
 				949127F21EA29316005AF926 /* TRICardManager.swift */,
+				945184D91EA94FE00052766D /* TRIHighScoreManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -567,6 +570,7 @@
 				949127E11EA1810F005AF926 /* TRICardSuit.swift in Sources */,
 				83C078231C44044200CE5AE6 /* OALSimpleAudio.m in Sources */,
 				83C078351C44044300CE5AE6 /* OALTools.m in Sources */,
+				945184DA1EA94FE00052766D /* TRIHighScoreManager.swift in Sources */,
 				83C0781C1C44044200CE5AE6 /* OALActionManager.m in Sources */,
 				949127EB1EA184F1005AF926 /* TRIGameSceneLayout.swift in Sources */,
 				83C078311C44044300CE5AE6 /* mach_timing.c in Sources */,
@@ -717,7 +721,7 @@
 				INFOPLIST_FILE = Tripeak_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				OTHER_SWIFT_FLAGS = "";
+				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.debugr.Tripeak-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

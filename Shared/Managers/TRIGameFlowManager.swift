@@ -10,6 +10,12 @@ import SpriteKit
 
 class TRIGameFlowManager: NSObject {
     
+    private var debug: Bool = false
+    
+    private var leftPeakCompleted: Bool = false
+    private var centerPeakCompleted: Bool = false
+    private var rightPeakCompleted: Bool = false
+    
     private weak var gameScene: TRIGameScene?
     
     var currentCard: TRICard? {
@@ -60,12 +66,19 @@ class TRIGameFlowManager: NSObject {
     init(gameScene: TRIGameScene) {
         super.init()
         self.gameScene = gameScene
+        
+        #if DEBUG
+            self.debug = true
+        #endif
     }
     
     func handleTouchStart(point: CGPoint) {
         for card: TRICard in self.peakCards {
             if card.contains(point) && card.clickable {
-                if self.validateCardAgainstCurrentCard(cardModel: card.cardModel!) {
+                if self.validateCardAgainstCurrentCard(cardModel: card.cardModel!) || debug {
+                    
+                    TRIHighScoreManager.instance.cardCleared()
+                    
                     card.remove()
                     
                     let position = CGPoint(
@@ -85,6 +98,8 @@ class TRIGameFlowManager: NSObject {
                     self.removeCardFromPeak(peak: &self.leftPeak, card: card)
                     self.removeCardFromPeak(peak: &self.centerPeak, card: card)
                     self.removeCardFromPeak(peak: &self.rightPeak, card: card)
+                    
+                    self.checkPeaks()
                 }
                 return
             }
@@ -110,6 +125,33 @@ class TRIGameFlowManager: NSObject {
                 let cardIndex = self.gameScene!.cardDeckGraphics.index(of: topCard)
                 self.gameScene!.cardDeckGraphics.remove(at: cardIndex!)
             }
+        }
+    }
+    
+    private func checkPeaks() {
+        if self.gameScene!.leftPeak.count == 0 && !self.leftPeakCompleted {
+            self.leftPeakCompleted = true
+            TRIHighScoreManager.instance.peakCleared()
+        }
+        
+        if self.gameScene!.centerPeak.count == 0 && !self.centerPeakCompleted {
+            self.centerPeakCompleted = true
+            TRIHighScoreManager.instance.peakCleared()
+        }
+        
+        if self.gameScene!.rightPeak.count == 0 && !self.rightPeakCompleted {
+            self.rightPeakCompleted = true
+            TRIHighScoreManager.instance.peakCleared()
+        }
+        
+        if (self.leftPeakCompleted &&
+            self.centerPeakCompleted &&
+            self.rightPeakCompleted) {
+            
+            print("Game completed")
+            TRIHighScoreManager.instance.gameClearedWithRemainingCard(
+                remainingCards: self.gameScene!.cardDeckGraphics.count
+            )
         }
     }
     

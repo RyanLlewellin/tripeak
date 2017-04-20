@@ -19,6 +19,9 @@ class TRIGameScene: SKScene {
     weak var currentCard: TRICard?
   
     override func didMove(to view: SKView) {
+        
+        TRIHighScoreManager.instance.reset()
+        
         let gameSetupManager = TRIGameSetupManager(gameScene: self)
         self.gameSetupManager = gameSetupManager
         self.gameSetupManager!.setup()
@@ -29,5 +32,11 @@ class TRIGameScene: SKScene {
         let touch = touches.first
         let point = touch!.location(in: self)
         self.gameFlowManager!.handleTouchStart(point: point)
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        #if DEBUG
+            self.touchesBegan(touches, with: event)
+        #endif
     }
 }
