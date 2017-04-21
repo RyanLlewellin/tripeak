@@ -58,6 +58,7 @@
 		83F6420F1C34397200CCABB7 /* Cards.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83F642021C34397200CCABB7 /* Cards.xcassets */; };
 		945184DA1EA94FE00052766D /* TRIHighScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945184D91EA94FE00052766D /* TRIHighScoreManager.swift */; };
 		945184DC1EA95C440052766D /* TRIHighscoreElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945184DB1EA95C440052766D /* TRIHighscoreElement.swift */; };
+		945184DE1EA9853D0052766D /* TRIGameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945184DD1EA9853D0052766D /* TRIGameState.swift */; };
 		949127E11EA1810F005AF926 /* TRICardSuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E01EA1810F005AF926 /* TRICardSuit.swift */; };
 		949127E31EA1816A005AF926 /* TRICardRank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E21EA1816A005AF926 /* TRICardRank.swift */; };
 		949127E71EA182A6005AF926 /* TRICardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127E61EA182A6005AF926 /* TRICardModel.swift */; };
@@ -159,6 +160,7 @@
 		83F642021C34397200CCABB7 /* Cards.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Cards.xcassets; sourceTree = "<group>"; };
 		945184D91EA94FE00052766D /* TRIHighScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIHighScoreManager.swift; sourceTree = "<group>"; };
 		945184DB1EA95C440052766D /* TRIHighscoreElement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIHighscoreElement.swift; sourceTree = "<group>"; };
+		945184DD1EA9853D0052766D /* TRIGameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameState.swift; sourceTree = "<group>"; };
 		949127E01EA1810F005AF926 /* TRICardSuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardSuit.swift; sourceTree = "<group>"; };
 		949127E21EA1816A005AF926 /* TRICardRank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardRank.swift; sourceTree = "<group>"; };
 		949127E61EA182A6005AF926 /* TRICardModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardModel.swift; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 				949127E01EA1810F005AF926 /* TRICardSuit.swift */,
 				949127E21EA1816A005AF926 /* TRICardRank.swift */,
 				949127EE1EA1A866005AF926 /* TRIBack.swift */,
+				945184DD1EA9853D0052766D /* TRIGameState.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				949127EB1EA184F1005AF926 /* TRIGameSceneLayout.swift in Sources */,
 				83C078311C44044300CE5AE6 /* mach_timing.c in Sources */,
 				83C078331C44044300CE5AE6 /* NSMutableDictionary+WeakReferences.m in Sources */,
+				945184DE1EA9853D0052766D /* TRIGameState.swift in Sources */,
 				83D8E0E01C43F217003E84F3 /* TRIWeakContainer.swift in Sources */,
 				83D8E0F01C43F2D0003E84F3 /* TRIBaseGameLayout.swift in Sources */,
 				949127E31EA1816A005AF926 /* TRICardRank.swift in Sources */,
