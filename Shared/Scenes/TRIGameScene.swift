@@ -10,6 +10,7 @@ import SpriteKit
 
 class TRIGameScene: SKScene {
     
+    private var gameOverOverlay: TRIGameOverOverlay?
     private var gameSetupManager: TRIGameSetupManager?
     private var gameFlowManager: TRIGameFlowManager?
     var leftPeak: [TRICard] = []
@@ -29,6 +30,7 @@ class TRIGameScene: SKScene {
         self.gameFlowManager = TRIGameFlowManager(gameScene: self)
         
         self.setupInterface()
+        self.setupOverlays()
     }
     
     private func setupInterface() {
@@ -50,15 +52,28 @@ class TRIGameScene: SKScene {
         self.addChild(highscoreElement)
     }
     
+    private func setupOverlays() {
+        let overlay = TRIGameOverOverlay(withSize: self.size)
+        overlay.zPosition = 99999 // always at the top
+        
+        self.addChild(overlay)
+        self.gameOverOverlay = overlay
+    }
+    
     func startGameWithCurrentCard(card: TRICard) {
         self.currentCard = card
         self.state = .Started
     }
     
-    func gameOver() {
+    func gameOver(message: String) {
         print("Game over")
-        self.backgroundColor = SKColor.purple
-        self.state = .Ended
+        
+        let subTitle = "Score: \(TRIHighScoreManager.instance.formattedScore)"
+        self.gameOverOverlay!.show(withTitle: message, subTitle: subTitle) { () -> Void in
+            self.state = .Ended
+        }
+        
+        self.state = .WillEnd
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

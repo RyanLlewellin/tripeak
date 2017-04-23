@@ -154,7 +154,7 @@ class TRIGameFlowManager: NSObject {
             TRIHighScoreManager.instance.gameClearedWithRemainingCard(
                 remainingCards: self.gameScene!.cardDeckGraphics.count
             )
-            self.gameScene?.gameOver()
+            self.gameScene?.gameOver(message: "Nice Game")
         }
     }
     
@@ -181,7 +181,7 @@ class TRIGameFlowManager: NSObject {
             
             if(!canContinue){
                 print("No valid moves left")
-                self.gameScene!.gameOver()
+                self.gameScene!.gameOver(message: "No moves left!")
             }
         }
     }
