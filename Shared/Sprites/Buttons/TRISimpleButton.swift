@@ -2,8 +2,8 @@
 //  TRISimpleButton.swift
 //  Tripeak
 //
-//  Created by CodeCaptain on 1/8/16.
-//  Copyright © 2016 CodeCaptain. All rights reserved.
+//  Created by Ryan Llewellin on 1/8/16.
+//  Copyright © 2016 ModernGames. All rights reserved.
 //
 
 import SpriteKit

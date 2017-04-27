@@ -500,7 +500,7 @@
 				CLASSPREFIX = TRI;
 				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = CodeCaptain;
+				ORGANIZATIONNAME = ModernGames;
 				TargetAttributes = {
 					83F641DF1C34360E00CCABB7 = {
 						CreatedOnToolsVersion = 7.2;
@@ -738,7 +738,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDEBUG";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.debugr.Tripeak-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ModernGames.Tripeak-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ./Shared/Other/TRIBridgingHeader.h;
@@ -758,7 +758,7 @@
 				INFOPLIST_FILE = Tripeak_iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.debugr.Tripeak-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ModernGames.Tripeak-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = ./Shared/Other/TRIBridgingHeader.h;

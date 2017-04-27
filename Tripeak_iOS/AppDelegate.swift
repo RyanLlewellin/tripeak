@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Tripeak_iOS
 //
-//  Created by CodeCaptain on 12/30/15.
-//  Copyright © 2015 CodeCaptain. All rights reserved.
+//  Created by ModernGames on 12/30/15.
+//  Copyright © 2015 ModernGames. All rights reserved.
 //
 
 import UIKit

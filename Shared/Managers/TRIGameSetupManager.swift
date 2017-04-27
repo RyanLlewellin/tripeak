@@ -3,7 +3,7 @@
 //  Tripeak
 //
 //  Created by Ryan Llewellin on 2017-04-14.
-//  Copyright © 2017 CodeCaptain. All rights reserved.
+//  Copyright © 2017 ModernGames. All rights reserved.
 //
 
 import SpriteKit
