@@ -68,11 +68,22 @@ class TRIMenuScene: SKScene {
     }
     
     func relaxedModeGame() {
-        print("Relax")
+        let settings = TRIGameConfig()
+        settings.hasTimer = false
+        self.presentGameWithConfig(config: settings)
     }
     
     func timedModeGame() {
-        print("Timed")
+        let settings = TRIGameConfig()
+        settings.hasTimer = true
+        settings.timerSeconds = 120
+        self.presentGameWithConfig(config: settings)
+    }
+    
+    private func presentGameWithConfig(config: TRIGameConfig){
+    
+        let gameScene = TRIGameScene(size: self.size, config: config)
+        self.view?.presentScene(gameScene, transition: SKTransition.fade(withDuration: 1.0))
     }
     
     private func setupInterface() {

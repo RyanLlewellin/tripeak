@@ -75,6 +75,7 @@
 		94C58A8D1F15BC380032DB78 /* TRIMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C58A8C1F15BC380032DB78 /* TRIMenuScene.swift */; };
 		94C58A8F1F15BD330032DB78 /* TRIUnderlinedLabelNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C58A8E1F15BD330032DB78 /* TRIUnderlinedLabelNode.swift */; };
 		94C58A911F15D3160032DB78 /* TRIMenuSceneLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C58A901F15D3160032DB78 /* TRIMenuSceneLayout.swift */; };
+		94E16F271F16C01C0068D30B /* TRIGameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E16F261F16C01C0068D30B /* TRIGameConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +185,7 @@
 		94C58A8C1F15BC380032DB78 /* TRIMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIMenuScene.swift; sourceTree = "<group>"; };
 		94C58A8E1F15BD330032DB78 /* TRIUnderlinedLabelNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIUnderlinedLabelNode.swift; sourceTree = "<group>"; };
 		94C58A901F15D3160032DB78 /* TRIMenuSceneLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIMenuSceneLayout.swift; sourceTree = "<group>"; };
+		94E16F261F16C01C0068D30B /* TRIGameConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -462,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				949127E61EA182A6005AF926 /* TRICardModel.swift */,
+				94E16F261F16C01C0068D30B /* TRIGameConfig.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				83C0782C1C44044300CE5AE6 /* ALWrapper.m in Sources */,
 				83D8E0C01C43F167003E84F3 /* TRIKeyCodes.swift in Sources */,
 				83F641E41C34360E00CCABB7 /* AppDelegate.swift in Sources */,
+				94E16F271F16C01C0068D30B /* TRIGameConfig.swift in Sources */,
 				83C0782F1C44044300CE5AE6 /* OALSuspendHandler.m in Sources */,
 				83C078321C44044300CE5AE6 /* NSMutableArray+WeakReferences.m in Sources */,
 				83C0781B1C44044200CE5AE6 /* OALAction.m in Sources */,
