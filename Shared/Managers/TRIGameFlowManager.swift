@@ -134,16 +134,19 @@ class TRIGameFlowManager: NSObject {
         if self.gameScene!.leftPeak.count == 0 && !self.leftPeakCompleted {
             self.leftPeakCompleted = true
             TRIHighScoreManager.instance.peakCleared()
+            TRISoundManager.instance.playSound(sound: .PeakClear)
         }
         
         if self.gameScene!.centerPeak.count == 0 && !self.centerPeakCompleted {
             self.centerPeakCompleted = true
             TRIHighScoreManager.instance.peakCleared()
+            TRISoundManager.instance.playSound(sound: .PeakClear)
         }
         
         if self.gameScene!.rightPeak.count == 0 && !self.rightPeakCompleted {
             self.rightPeakCompleted = true
             TRIHighScoreManager.instance.peakCleared()
+            TRISoundManager.instance.playSound(sound: .PeakClear)
         }
         
         if (self.leftPeakCompleted &&

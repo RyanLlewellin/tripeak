@@ -77,7 +77,13 @@ class TRIGameSetupManager: NSObject {
         var zPos: Int32 = 1000
         
         for card: TRICard in cards {
+            
             let last: Bool = (i == cards.count - 1)
+            
+            let soundAction = SKAction.run({ () -> Void in
+                TRISoundManager.instance.playSound(sound: .CardSlide)
+            })
+            
             let delayAction = SKAction.wait(forDuration: Double(i) * 0.05)
             let animatingAction = SKAction.move(to: card.finalPosition!, duration: 0.4)
             animatingAction.timingMode = .easeOut
@@ -85,7 +91,7 @@ class TRIGameSetupManager: NSObject {
             let secondDelayAction = SKAction.wait(forDuration: 0.1)
             let sequence = SKAction.sequence(
                 [
-                    delayAction, animatingAction, secondDelayAction
+                    delayAction, soundAction, animatingAction, secondDelayAction
                 ]
             )
             

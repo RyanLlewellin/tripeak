@@ -71,6 +71,7 @@
 		949127F11EA2904E005AF926 /* TRIGameFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */; };
 		949127F31EA29316005AF926 /* TRICardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127F21EA29316005AF926 /* TRICardManager.swift */; };
 		94C58A891F15B2320032DB78 /* TRIBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C58A881F15B2320032DB78 /* TRIBackground.swift */; };
+		94C58A8B1F15B5C50032DB78 /* TRISoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C58A8A1F15B5C50032DB78 /* TRISoundManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +177,7 @@
 		949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameFlowManager.swift; sourceTree = "<group>"; };
 		949127F21EA29316005AF926 /* TRICardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardManager.swift; sourceTree = "<group>"; };
 		94C58A881F15B2320032DB78 /* TRIBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIBackground.swift; sourceTree = "<group>"; };
+		94C58A8A1F15B5C50032DB78 /* TRISoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRISoundManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -443,6 +445,7 @@
 				949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */,
 				949127F21EA29316005AF926 /* TRICardManager.swift */,
 				945184D91EA94FE00052766D /* TRIHighScoreManager.swift */,
+				94C58A8A1F15B5C50032DB78 /* TRISoundManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -574,6 +577,7 @@
 				83D8E12A1C43F34E003E84F3 /* TRISimpleButton.swift in Sources */,
 				83C0781E1C44044200CE5AE6 /* OALUtilityActions.m in Sources */,
 				83C0781D1C44044200CE5AE6 /* OALAudioActions.m in Sources */,
+				94C58A8B1F15B5C50032DB78 /* TRISoundManager.swift in Sources */,
 				83F641EA1C34360E00CCABB7 /* IOSGameViewController.swift in Sources */,
 				94C58A891F15B2320032DB78 /* TRIBackground.swift in Sources */,
 				83C0782D1C44044300CE5AE6 /* OpenALManager.m in Sources */,
