@@ -18,7 +18,7 @@ class IOSGameViewController: UIViewController {
   override func viewWillLayoutSubviews() {
     if let view = self.view as? SKView {
       if view.scene == nil {
-        let gameScene = TRIGameScene(
+        let gameScene = TRIMenuScene(
           size: view.frame.size
         )
         view.presentScene(gameScene)
