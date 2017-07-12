@@ -119,6 +119,7 @@ class TRIGameSetupManager: NSObject {
                 x: TRIGameSceneLayout.deckPosition.x,
                 y: TRIGameSceneLayout.deckPosition.y + CGFloat(i) / 5
             )
+            card.zPosition = 1
             self.gameScene!.addChild(card)
             self.cardDeckGraphics.append(card)
         }

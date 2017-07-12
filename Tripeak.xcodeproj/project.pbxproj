@@ -70,6 +70,7 @@
 		949127EF1EA1A866005AF926 /* TRIBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127EE1EA1A866005AF926 /* TRIBack.swift */; };
 		949127F11EA2904E005AF926 /* TRIGameFlowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */; };
 		949127F31EA29316005AF926 /* TRICardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949127F21EA29316005AF926 /* TRICardManager.swift */; };
+		94C58A891F15B2320032DB78 /* TRIBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C58A881F15B2320032DB78 /* TRIBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +175,7 @@
 		949127EE1EA1A866005AF926 /* TRIBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIBack.swift; sourceTree = "<group>"; };
 		949127F01EA2904E005AF926 /* TRIGameFlowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIGameFlowManager.swift; sourceTree = "<group>"; };
 		949127F21EA29316005AF926 /* TRICardManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRICardManager.swift; sourceTree = "<group>"; };
+		94C58A881F15B2320032DB78 /* TRIBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TRIBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +334,7 @@
 				83D8E1201C43F34E003E84F3 /* Overlays */,
 				949127E81EA18377005AF926 /* TRICard.swift */,
 				945184DB1EA95C440052766D /* TRIHighscoreElement.swift */,
+				94C58A881F15B2320032DB78 /* TRIBackground.swift */,
 			);
 			path = Sprites;
 			sourceTree = "<group>";
@@ -572,6 +575,7 @@
 				83C0781E1C44044200CE5AE6 /* OALUtilityActions.m in Sources */,
 				83C0781D1C44044200CE5AE6 /* OALAudioActions.m in Sources */,
 				83F641EA1C34360E00CCABB7 /* IOSGameViewController.swift in Sources */,
+				94C58A891F15B2320032DB78 /* TRIBackground.swift in Sources */,
 				83C0782D1C44044300CE5AE6 /* OpenALManager.m in Sources */,
 				949127E91EA18377005AF926 /* TRICard.swift in Sources */,
 				83C078341C44044300CE5AE6 /* OALAudioFile.m in Sources */,
@@ -729,13 +733,14 @@
 		83F641F71C34360E00CCABB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Launch;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3KHLJVPN8H;
 				INFOPLIST_FILE = Tripeak_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DDEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ModernGames.Tripeak-iOS";
@@ -750,13 +755,14 @@
 		83F641F81C34360E00CCABB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = Launch;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3KHLJVPN8H;
 				INFOPLIST_FILE = Tripeak_iOS/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ModernGames.Tripeak-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
