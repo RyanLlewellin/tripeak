@@ -18,12 +18,12 @@ class TRISoundManager: NSObject {
     }
     
     func playSound(sound: TRISounds) {
-        manager?.playEffect(sound.rawValue)
+        _ = manager?.playEffect(sound.rawValue)
     }
     
     func preloadSounds() {
         for sound in TRISounds.allValues {
-            manager?.preloadEffect(sound.rawValue)
+            _ = manager?.preloadEffect(sound.rawValue)
         }
     }
 }
