@@ -10,6 +10,7 @@ import Foundation
 
 class TRIGameSceneLayout: NSObject {
     
+    static var timerHeight: CGFloat = 5.0
     static var hudHeight: CGFloat = 40.0
     static var hudFont: String = Fonts.HelveticaNeueLight.rawValue
     static var hudFontSize: CGFloat = 21.0
