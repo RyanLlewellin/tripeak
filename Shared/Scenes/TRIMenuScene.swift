@@ -124,5 +124,7 @@ class TRIMenuScene: SKScene {
         self.background = background
     }
     
-    
+    override func updateMotion(xVal: Double, yVal: Double) {
+        self.background!.updateMotion(xVal: xVal, yVal: yVal)
+    }
 }

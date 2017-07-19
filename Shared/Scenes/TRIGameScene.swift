@@ -209,6 +209,10 @@ class TRIGameScene: SKScene {
         }
     }
     
+    override func updateMotion(xVal: Double, yVal: Double) {
+        self.background!.updateMotion(xVal: xVal, yVal: yVal)
+    }
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         #if DEBUG
             self.touchesBegan(touches, with: event)
