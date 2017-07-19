@@ -72,6 +72,7 @@ class TRIPauseOverlay: TRIBaseOverlay {
         btnMenu.zPosition = 9999999
         var yOffset = self.btnResume!.position.y
         yOffset -= self.btnResume!.size.height / 2
+        yOffset -= btnMenu.size.height / 2
         yOffset -= TRIOverlayLayout.btnResumeOffset
         
         btnMenu.position = CGPoint(

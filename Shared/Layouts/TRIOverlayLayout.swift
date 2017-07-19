@@ -19,9 +19,21 @@ class TRIOverlayLayout: TRIBaseGameLayout {
         height: 55
     )
     static var buttonFontSize: CGFloat = 20.0
-    static var btnResumeOffset: CGFloat = 45.0
+    static var btnResumeOffset: CGFloat = 25.0
     static var titleYOffset: CGFloat = 0.0
     static var subTitleYOffset: CGFloat = 0.0
     static var titleFontSize: CGFloat = 50.0
     static var subTitleFontSize: CGFloat = 25.0
+    
+    override class func setupIphone5() {
+        titleFontSize = 45.0
+        btnResumeOffset = 10.0
+    }
+    
+    override class func setupIphone4OrLess() {
+        titleFontSize = 40.0
+        btnResumeOffset = 10.0
+        btnMenuSize = CGSize(width: 120, height: 40)
+        btnResumeSize = CGSize(width: 180, height: 50)
+    }
 }

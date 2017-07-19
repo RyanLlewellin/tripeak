@@ -16,4 +16,9 @@ class TRIMenuSceneLayout: TRIBaseGameLayout {
     static var titleBorderHeight: CGFloat = 5.0
     
     static var buttonFontSize: CGFloat = 24.0
+    
+    override class func setupIphone4OrLess() {
+        buttonFontSize = 18.0
+        titleYOffset = 40.0
+    }
 }
