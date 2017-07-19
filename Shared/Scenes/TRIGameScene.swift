@@ -23,6 +23,8 @@ class TRIGameScene: SKScene {
     private var config: TRIGameConfig?
     private weak var timerBar: TRITimer?
     private var currentTime: CGFloat = 0.0
+    private weak var btnPause: TRISimpleButton?
+    private weak var pauseOverlay: TRIPauseOverlay?
     
     convenience init(size: CGSize, config: TRIGameConfig) {
         self.init(size: size)
@@ -107,14 +109,66 @@ class TRIGameScene: SKScene {
         highscoreElement.position = hudBG.position
         TRIHighScoreManager.instance.addSubscriber(subscriber: highscoreElement)
         self.addChild(highscoreElement)
+        
+        let size = CGSize(
+            width: hudBG.size.height,
+            height: hudBG.size.height
+        )
+        let btnPause = TRISimpleButton(
+            image: "pause",
+            size: size
+        )
+        
+        btnPause.position = CGPoint(
+            x: btnPause.size.width * 0.5,
+            y: hudBG.position.y
+        )
+        
+        btnPause.isUserInteractionEnabled = true
+        btnPause.addTarget(self, selector: #selector(TRIGameScene.pauseGame))
+        self.addChild(btnPause)
+        self.btnPause = btnPause
+    }
+    
+    func pauseGame() {
+        if self.state == .Started {
+            self.state = .Paused
+            self.stopTimer()
+            self.pauseOverlay?.showPauseScreen(closure: nil)
+        }
+    }
+    
+    func resumeGame() {
+        if self.state == .Paused {
+            self.state = .Started
+            self.startTimer()
+            self.pauseOverlay?.hide(nil)
+        }
+    }
+    
+    func goToMenu() {
+        let scene = TRIMenuScene(size: self.size)
+        self.view?.presentScene(scene, transition: SKTransition.fade(withDuration: 1.0))
+        
     }
     
     private func setupOverlays() {
-        let overlay = TRIGameOverOverlay(withSize: self.size)
+        let overlay = TRIGameOverOverlay(
+            withSize: self.size
+        )
         overlay.zPosition = 99999 // always at the top
         
         self.addChild(overlay)
         self.gameOverOverlay = overlay
+        
+        let pauseOverlay = TRIPauseOverlay(
+            withSize: self.size
+        )
+        pauseOverlay.zPosition = 99999
+        pauseOverlay.btnResume?.addTarget(self, selector: #selector(TRIGameScene.resumeGame))
+        pauseOverlay.btnMenu?.addTarget(self, selector: #selector(TRIGameScene.goToMenu))
+        self.addChild(pauseOverlay)
+        self.pauseOverlay = pauseOverlay
     }
     
     private func setupBackground() {
@@ -150,8 +204,7 @@ class TRIGameScene: SKScene {
         }
         
         if self.state == .Ended {
-            let scene = TRIMenuScene(size: self.size)
-            self.view?.presentScene(scene, transition: SKTransition.fade(withDuration: 1.0))
+            self.goToMenu()
             return
         }
     }
