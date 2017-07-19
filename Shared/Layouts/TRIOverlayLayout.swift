@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TRIOverlayLayout: NSObject {
+class TRIOverlayLayout: TRIBaseGameLayout {
 
     static var btnResumeSize: CGSize = CGSize(
         width: 230,

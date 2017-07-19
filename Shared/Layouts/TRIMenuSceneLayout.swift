@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TRIMenuSceneLayout: NSObject {
+class TRIMenuSceneLayout: TRIBaseGameLayout {
 
     static var suitsOffset: CGFloat = -30.0
     static var titleFontSize: CGFloat = 24.0

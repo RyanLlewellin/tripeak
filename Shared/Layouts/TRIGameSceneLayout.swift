@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TRIGameSceneLayout: NSObject {
+class TRIGameSceneLayout: TRIBaseGameLayout {
     
     static var timerHeight: CGFloat = 5.0
     static var hudHeight: CGFloat = 40.0
